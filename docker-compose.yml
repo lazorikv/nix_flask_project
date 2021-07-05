@@ -12,14 +12,35 @@ services:
       - ./.env.dev
     depends_on:
           - db
+    networks:
+      - app-tier
   db:
     image: postgres:13-alpine
     volumes:
       - postgres_data:/var/lib/postgresql/data/
+    ports:
+      - 5432:5432
+    networks:
+      - app-tier
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root
       - POSTGRES_DB=films
+  pgadmin4:
+    image: 'dpage/pgadmin4:latest'
+    restart: always
+    ports:
+      - 8080:80
+    depends_on:
+      - db
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "lazorkinv@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "qwedvord123"
+    networks:
+      - app-tier
 
+networks:
+    app-tier:
+        driver: bridge
 volumes:
   postgres_data:
