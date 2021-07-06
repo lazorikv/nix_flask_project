@@ -12,6 +12,7 @@ requests = "*"
 flask-migrate = "*"
 uwsgi = "*"
 gunicorn = "*"
+flask-login = "*"
 
 [dev-packages]
 

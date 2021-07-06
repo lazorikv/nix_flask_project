@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 
+from flask_login import UserMixin
 db = SQLAlchemy()
 
 
@@ -32,13 +33,16 @@ class FilmModel(db.Model):
         return f"<Film {self.title}>"
 
 
-class UserModel(db.Model):
+class UserModel(UserMixin, db.Model):
     __tablename__ = 'users'
 
     user_id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False, unique=True)
-    password = db.Column(db.String(20), nullable=False)
+    password = db.Column(db.String(), nullable=False)
     films = db.relationship('FilmModel', backref='film')
+
+    def get_id(self):
+        return self.user_id
 
     def __init__(self, username, password):
         self.username = username
