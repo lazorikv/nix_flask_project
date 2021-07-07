@@ -12,7 +12,7 @@ class FilmModel(db.Model):
     film_id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(50), nullable=False)
     year_release = db.Column(db.Date, nullable=False)
-    director_id = db.Column(db.Integer, db.ForeignKey('director.director_id'), nullable=True)
+    director_id = db.Column(db.Integer, db.ForeignKey('director.director_id', ondelete="CASCADE"), nullable=True)
     description = db.Column(db.Text())
     rating = db.Column(db.Integer, nullable=False)
     poster = db.Column(db.String(200), nullable=False)
@@ -71,8 +71,8 @@ class FilmGenreModel(db.Model):
     __tablename__ = 'filmgenre'
 
     filmgenre_id = db.Column(db.Integer, primary_key=True)
-    genre_id = db.Column(db.Integer, db.ForeignKey('genre.genre_id'))
-    film_id = db.Column(db.Integer, db.ForeignKey('film.film_id'))
+    genre_id = db.Column(db.Integer, db.ForeignKey('genre.genre_id', ondelete="CASCADE"))
+    film_id = db.Column(db.Integer, db.ForeignKey('film.film_id', ondelete="CASCADE"))
 
 
 class Director(db.Model):
