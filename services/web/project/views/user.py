@@ -17,7 +17,7 @@ class UserSchema(ma.Schema):
     """Create a UserSchema by defining a class with
        variables mapping attribute names to Field objects"""
     class Meta:
-        fields = ('id', 'username', 'password')
+        fields = ('user_id', 'username', 'password')
 
 
 user_schema = UserSchema()

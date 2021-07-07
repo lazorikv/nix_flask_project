@@ -18,7 +18,9 @@ api = Api(version='1.0', title='REST-API service',
 api.init_app(app)
 ma = Marshmallow(app)
 from project.views.user import api as np1
+from project.views.genre import api as np2
 api.add_namespace(np1)
+api.add_namespace(np2)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'auth.login_post'
