@@ -4,6 +4,8 @@ from flask import request
 from project.models import db, GenreModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
+
+
 api = Namespace('genres', description='Film genres')
 
 
@@ -46,7 +48,7 @@ class GetOneGenre(Resource):
         genre = db.session.query(GenreModel).filter_by(genre_id=genre_id).first()
         if genre:
             return {'Genre': genre.genre_id,
-                    'genre_id': genre.user_id,
+                    'genre_id': genre.genre_id,
                     'genre_name': genre.genre_name}, 200
         else:
             return {"Error": "Genre was not found"}, 404
@@ -58,7 +60,7 @@ class PostGenre(Resource):
 
     @api.expect(genre_model)
     def post(self) -> tuple:
-        """Post data about genre to server
+        """Post data about genre to db
         """
         try:
             genre = GenreModel(genre_name=request.json['genre_name'])

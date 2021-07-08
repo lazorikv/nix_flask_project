@@ -6,6 +6,8 @@ from project import auth
 from flask_restplus import Api
 from project.views.user import api as user_namespace
 from project.views.genre import api as genre_namespace
+from project.views.film import api as film_namespace
+from project.views.director import api as director_namespace
 
 #  init app
 app = Flask(__name__)
@@ -25,6 +27,8 @@ api = Api(version='1.0', title='REST-API service',
 api.init_app(app)
 api.add_namespace(user_namespace)
 api.add_namespace(genre_namespace)
+api.add_namespace(film_namespace)
+api.add_namespace(director_namespace)
 
 # init flask_login
 login_manager = LoginManager()

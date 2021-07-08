@@ -19,11 +19,11 @@ class FilmModel(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
     film_sm = db.relationship('FilmGenreModel', backref='film_sm')
 
-    def __init__(self, title, year_release, director, description, rating,
+    def __init__(self, title, year_release, director_id, description, rating,
                  poster, user_id):
         self.title = title
         self.year_release = year_release
-        self.director = director
+        self.director_id = director_id
         self.description = description
         self.rating = rating
         self.poster = poster
