@@ -3,7 +3,8 @@
 from flask import request
 from project import models
 from flask_restplus import fields, Resource, Namespace
-from project.app import ma
+from marshmallow import ValidationError
+
 
 api = Namespace('users', description='User Registration')
 
@@ -11,17 +12,6 @@ user_model = api.model('User', {
     'username': fields.String('Enter Name'),
     'password': fields.String('Enter Password')
 })
-
-
-class UserSchema(ma.Schema):
-    """Create a UserSchema by defining a class with
-       variables mapping attribute names to Field objects"""
-    class Meta:
-        fields = ('user_id', 'username', 'password')
-
-
-user_schema = UserSchema()
-users_schema = UserSchema(many=True)
 
 
 @api.route('/get')
@@ -56,6 +46,7 @@ class GetOneUser(Resource):
         """Get data about one user
         Format: json
         """
+
         user = models.db.session.query(models.UserModel).filter_by(user_id=user_id).first()
         if user:
             return {'User': user.user_id,
@@ -69,34 +60,46 @@ class GetOneUser(Resource):
 @api.route('/post')
 class PostUser(Resource):
     """Method POST"""
+
     @api.expect(user_model)
     def post(self) -> tuple:
         """Post data about user to server
         """
-        user = models.UserModel(username=request.json['username'], password=request.json['password'])
-        models.db.session.add(user)
-        models.db.session.commit()
-        return {'message': 'User added to database'}, 201
+
+        try:
+            user = models.UserModel(username=request.json['username'], password=request.json['password'])
+            models.db.session.add(user)
+            models.db.session.commit()
+            return {'message': 'User added to database'}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
 
 
 @api.route('/put/<int:user_id>')
 class PutUser(Resource):
     """Method PUT"""
+
     @api.expect(user_model)
     def put(self, user_id):
         """Update data about user"""
-        user = models.UserModel.query.get(user_id)
-        user.username = request.json['username']
-        user.password = request.json['password']
-        models.db.session.commit()
-        return {'message': 'data updated'}, 201
+
+        try:
+            user = models.UserModel.query.get(user_id)
+            user.username = request.json['username']
+            user.password = request.json['password']
+            models.db.session.commit()
+            return {'message': 'data updated'}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
 
 
 @api.route('/delete/<int:user_id>')
 class DeleteUser(Resource):
     """Method DELETE"""
+
     def delete(self, user_id) -> tuple:
         """Removes a user by his id"""
+
         user = models.UserModel.query.get(user_id)
         models.db.session.delete(user)
         models.db.session.commit()

@@ -3,24 +3,13 @@
 from flask import request
 from project.models import db, GenreModel
 from flask_restplus import fields, Resource, Namespace
-from project.app import ma
-
+from marshmallow import ValidationError
 api = Namespace('genres', description='Film genres')
+
 
 genre_model = api.model('Genre', {
     'genre_name': fields.String('Enter Genre'),
 })
-
-
-class UserSchema(ma.Schema):
-    """Create a UserSchema by defining a class with
-       variables mapping attribute names to Field objects"""
-    class Meta:
-        fields = ('genre_id', 'genre_name')
-
-
-genre_schema = UserSchema()
-genres_schema = UserSchema(many=True)
 
 
 @api.route('/get')
@@ -66,31 +55,40 @@ class GetOneGenre(Resource):
 @api.route('/post')
 class PostGenre(Resource):
     """Method POST"""
+
     @api.expect(genre_model)
     def post(self) -> tuple:
         """Post data about genre to server
         """
-        genre = GenreModel(genre_name=request.json['genre_name'])
-        db.session.add(genre)
-        db.session.commit()
-        return {'message': 'Genre added to database'}, 201
+        try:
+            genre = GenreModel(genre_name=request.json['genre_name'])
+            db.session.add(genre)
+            db.session.commit()
+            return {'message': 'Genre added to database'}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
 
 
 @api.route('/put/<int:genre_id>')
 class PutGenre(Resource):
     """Method PUT"""
+
     @api.expect(genre_model)
     def put(self, genre_id):
         """Update data about genre"""
-        genre = GenreModel.query.get(genre_id)
-        genre.genre_name = request.json['genre_name']
-        db.session.commit()
-        return {'message': 'data updated'}, 201
+        try:
+            genre = GenreModel.query.get(genre_id)
+            genre.genre_name = request.json['genre_name']
+            db.session.commit()
+            return {'message': 'data updated'}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
 
 
 @api.route('/delete/<int:genre_id>')
 class DeleteGenre(Resource):
     """Method DELETE"""
+
     def delete(self, genre_id) -> tuple:
         """Removes a genre by id"""
         genre = GenreModel.query.get(genre_id)
