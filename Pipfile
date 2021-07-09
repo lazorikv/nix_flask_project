@@ -19,6 +19,7 @@ flask-restplus = "*"
 werkzeug = "==0.16.1"
 marshmallow-sqlalchemy = "*"
 marshmallow = "*"
+pylint = "*"
 
 [dev-packages]
 
