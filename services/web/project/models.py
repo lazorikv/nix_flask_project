@@ -21,7 +21,8 @@ class FilmModel(db.Model):
         nullable=True,
     )
     description = db.Column(db.Text())
-    rating = db.Column(db.Integer, nullable=False)
+    rating = db.Column(db.Integer, db.CheckConstraint("1 <= rating AND rating<= 10"),
+                       nullable=False,)
     poster = db.Column(db.String(200), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
     film_sm = db.relationship("FilmGenreModel", backref="film_sm")
