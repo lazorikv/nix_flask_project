@@ -9,3 +9,5 @@ flask_login==0.4.1
 flask-restplus==0.13.0
 Werkzeug==0.16.1
 marshmallow==3.12.2
+faker==6.1.1
+sqlalchemy==1.4.20

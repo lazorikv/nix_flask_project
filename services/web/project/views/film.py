@@ -1,9 +1,11 @@
 """Film methods CRUD"""
 
 from flask import request
-from project.models import FilmModel, db
+from project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
+from sqlalchemy import String, func
+from sqlalchemy.dialects.postgresql import ARRAY
 
 api = Namespace("films", description="Films in library")
 
@@ -21,39 +23,9 @@ film_model = api.model(
 )
 
 
-@api.route("/get")
+@api.route("/get/<int:film_id>")
 class GetFilms(Resource):
     """Method GET"""
-
-    @staticmethod
-    def get() -> tuple:
-        """Get data about all films
-        Format: json
-        """
-
-        films = FilmModel.query.all()
-
-        if films:
-            films_list = [
-                {
-                    "film_id": film.film_id,
-                    "title": film.title,
-                    "year_release": film.year_release,
-                    "director_id": film.director_id,
-                    "description": film.description,
-                    "rating": film.rating,
-                    "poster": film.poster,
-                    "user_id": film.user_id,
-                }
-                for film in films
-            ]
-            return {"films": films_list}, 200
-        return {"Error": "Films was not found"}, 404
-
-
-@api.route("/get/<int:film_id>")
-class GetOneGenre(Resource):
-    """Method GET one film"""
 
     @staticmethod
     def get(film_id: int) -> tuple:
@@ -61,19 +33,77 @@ class GetOneGenre(Resource):
         Format: json
         """
 
-        film = db.session.query(FilmModel).filter_by(film_id=film_id).first()
-        if film:
-            return {
-                "film_id": film.film_id,
-                "title": film.title,
-                "year_release": film.year_release,
-                "director_id": film.director_id,
-                "description": film.description,
-                "rating": film.rating,
-                "poster": film.poster,
-                "user_id": film.user_id,
-            }, 200
+        genre_agg = func.array_agg(GenreModel.genre_name, type_=ARRAY(String)).label(
+            "genres"
+        )
+
+        films = (
+            db.session.query(FilmModel, Director, UserModel.username, genre_agg)
+            .select_from(FilmModel)
+            .join(FilmGenre)
+            .join(GenreModel)
+            .join(UserModel)
+            .join(Director)
+            .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
+            .filter(FilmModel.film_id == film_id)
+            .all()
+        )
+        if films:
+            serialized_data = [
+                {
+                    "title": film[0].title,
+                    "release": str(film[0].year_release),
+                    "genre": film.genres,
+                    "director": f"{film[1].director_name}",
+                    "description": film[0].description,
+                    "rating": film[0].rating,
+                    "poster": film[0].poster,
+                    "user": film.username,
+                }
+                for film in films
+            ]
+            return serialized_data, 200
         return {"Error": "Film was not found"}, 404
+
+
+@api.route("/get/")
+class GetOneGenre(Resource):
+    """Method GET all films"""
+
+    @staticmethod
+    def get() -> tuple:
+        """Get data about one film
+        Format: json
+        """
+
+        genre_agg = func.array_agg(GenreModel.genre_name, type_=ARRAY(String)).label(
+            "genres"
+        )
+
+        films = (
+            db.session.query(FilmModel, Director, UserModel.username, genre_agg)
+            .select_from(FilmModel)
+            .join(FilmGenre)
+            .join(GenreModel)
+            .join(UserModel)
+            .join(Director)
+            .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
+            .all()
+        )
+        serialized_data = [
+            {
+                "title": film[0].title,
+                "release": str(film[0].year_release),
+                "genre": film.genres,
+                "director": f"{film[1].director_name}",
+                "description": film[0].description,
+                "rating": film[0].rating,
+                "poster": film[0].poster,
+                "user": film.username,
+            }
+            for film in films
+        ]
+        return serialized_data, 200
 
 
 @api.route("/post")

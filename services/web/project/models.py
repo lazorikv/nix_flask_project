@@ -3,7 +3,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin
 
-
 db = SQLAlchemy()
 
 
@@ -22,13 +21,13 @@ class FilmModel(db.Model):
     )
     description = db.Column(db.Text())
     rating = db.Column(db.Integer, db.CheckConstraint("1 <= rating AND rating<= 10"),
-                       nullable=False,)
+                       nullable=False, )
     poster = db.Column(db.String(200), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
-    film_sm = db.relationship("FilmGenreModel", backref="film_sm")
+    genres = db.relationship("GenreModel", secondary='filmgenre')
 
     def __init__(
-        self, title, year_release, director_id, description, rating, poster, user_id
+            self, title, year_release, director_id, description, rating, poster, user_id
     ):
         self.title = title
         self.year_release = year_release
@@ -48,7 +47,7 @@ class UserModel(UserMixin, db.Model):
     __tablename__ = "users"
 
     user_id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(20), nullable=False, unique=True)
+    username = db.Column(db.String(20), nullable=False)
     password = db.Column(db.String(), nullable=False)
     films = db.relationship("FilmModel", backref="film")
 
@@ -71,25 +70,12 @@ class GenreModel(db.Model):
 
     genre_id = db.Column(db.Integer, primary_key=True)
     genre_name = db.Column(db.String(50), nullable=False)
-    filmgenre = db.relationship("FilmGenreModel", backref="filmgenre")
 
-    def __init__(self, genre):
-        self.genre = genre
+    def __init__(self, genre_name):
+        self.genre_name = genre_name
 
     def __repr__(self):
-        return f"Genre {self.genre}"
-
-
-class FilmGenreModel(db.Model):
-    """Model of film genre essence"""
-
-    __tablename__ = "filmgenre"
-
-    filmgenre_id = db.Column(db.Integer, primary_key=True)
-    genre_id = db.Column(
-        db.Integer, db.ForeignKey("genre.genre_id", ondelete="CASCADE")
-    )
-    film_id = db.Column(db.Integer, db.ForeignKey("film.film_id", ondelete="CASCADE"))
+        return f"Genre {self.genre_name}"
 
 
 class Director(db.Model):
@@ -107,3 +93,14 @@ class Director(db.Model):
     def __repr__(self):
         return f"<Director {self.director_name}>"
 
+
+class FilmGenre(db.Model):
+    """Model of film genre essence"""
+
+    __tablename__ = 'filmgenre'
+
+    filmgenre_id = db.Column(db.Integer, primary_key=True)
+    genre_id = db.Column(
+        db.Integer, db.ForeignKey("genre.genre_id", ondelete="CASCADE")
+    )
+    film_id = db.Column(db.Integer, db.ForeignKey("film.film_id", ondelete="CASCADE"))
