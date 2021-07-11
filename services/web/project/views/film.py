@@ -29,7 +29,7 @@ class GetFilms(Resource):
 
     @staticmethod
     def get(film_id: int) -> tuple:
-        """Get data about one film
+        """Get data about all films
         Format: json
         """
 
@@ -72,7 +72,7 @@ class GetOneGenre(Resource):
 
     @staticmethod
     def get() -> tuple:
-        """Get data about one film
+        """Get data about all films
         Format: json
         """
 
@@ -90,20 +90,22 @@ class GetOneGenre(Resource):
             .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
             .all()
         )
-        serialized_data = [
-            {
-                "title": film[0].title,
-                "release": str(film[0].year_release),
-                "genre": film.genres,
-                "director": f"{film[1].director_name}",
-                "description": film[0].description,
-                "rating": film[0].rating,
-                "poster": film[0].poster,
-                "user": film.username,
-            }
-            for film in films
-        ]
-        return serialized_data, 200
+        if films:
+            result = [
+                {
+                    "title": film[0].title,
+                    "release": str(film[0].year_release),
+                    "genre": film.genres,
+                    "director": f"{film[1].director_name}",
+                    "description": film[0].description,
+                    "rating": film[0].rating,
+                    "poster": film[0].poster,
+                    "user": film.username,
+                }
+                for film in films
+            ]
+            return result, 200
+        return {"Error": "Films was not found"}, 404
 
 
 @api.route("/post")
