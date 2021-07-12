@@ -6,7 +6,7 @@ from flask_restplus import fields, Resource, Namespace, reqparse
 from marshmallow import ValidationError
 from sqlalchemy import String, func
 from sqlalchemy.dialects.postgresql import ARRAY
-from project.pagination import get_paginated_list
+from project.paginate import get_paginated_list
 
 api = Namespace("films", description="Films in library")
 
