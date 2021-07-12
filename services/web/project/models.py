@@ -77,6 +77,10 @@ class GenreModel(db.Model):
     def __repr__(self):
         return f"Genre {self.genre_name}"
 
+    @classmethod
+    def genre_in(cls, genre_name):
+        return GenreModel.query.filter(GenreModel.genre_name == genre_name).first()
+
 
 class Director(db.Model):
     """Model of director essence"""
