@@ -21,7 +21,7 @@ film_model = api.model(
     {
         "title": fields.String("Enter title"),
         "year_release": fields.String("Enter release film year"),
-        "director_id": fields.String("Enter director_id"),
+        "director_name": fields.String("Enter director_id"),
         "genres": fields.List(fields.String("Enter")),
         "description": fields.String("Enter description of film"),
         "rating": fields.String("Enter film rating"),
@@ -128,16 +128,26 @@ class GetOneGenre(Resource):
 class PostGenre(Resource):
     """Method POST"""
 
-    @staticmethod
     @api.expect(film_model)
-    def post() -> tuple:
+    def post(self) -> tuple:
         """Post data about film to db"""
 
         try:
+            director_in = request.json["director_name"]
+            sm_director = Director.director_in(director_in)
+            if sm_director:
+                director_sp_id = sm_director.director_id
+            else:
+                dir_name = Director(director_name=director_in)
+                db.session.add(dir_name)
+                db.session.commit()
+                sm_director = Director.director_in(director_in)
+                director_sp_id = sm_director.director_id
+
             film = FilmModel(
                 title=request.json["title"],
                 year_release=request.json["year_release"],
-                director_id=request.json["director_id"],
+                director_id=director_sp_id,
                 description=request.json["description"],
                 rating=request.json["rating"],
                 poster=request.json["poster"],
@@ -146,30 +156,33 @@ class PostGenre(Resource):
             db.session.add(film)
             db.session.commit()
             genres = request.json["genres"]
-            count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
-            for genre in genres:
-                sm_genre = GenreModel.genre_in(genre)
-                if sm_genre:
-                    filmgenre = FilmGenre(
-                        genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
-                    )
-                    db.session.add(filmgenre)
-                    db.session.commit()
-                else:
-
-                    genre_add = GenreModel(genre_name=genre)
-                    db.session.add(genre_add)
-                    db.session.commit()
-
-                    sm_genre = GenreModel.genre_in(genre)
-                    filmgenre = FilmGenre(
-                        genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
-                    )
-                    db.session.add(filmgenre)
-                    db.session.commit()
+            self.genre_post(genres)
             return {"message": "Film added to database"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
+
+    @staticmethod
+    def genre_post(list_genre):
+        count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
+        for genre in list_genre:
+            sm_genre = GenreModel.genre_in(genre)
+            if sm_genre:
+                filmgenre = FilmGenre(
+                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
+                )
+                db.session.add(filmgenre)
+                db.session.commit()
+            else:
+                genre_add = GenreModel(genre_name=genre)
+                db.session.add(genre_add)
+                db.session.commit()
+
+                sm_genre = GenreModel.genre_in(genre)
+                filmgenre = FilmGenre(
+                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
+                )
+                db.session.add(filmgenre)
+                db.session.commit()
 
 
 @api.route("/put/<int:film_id>")

@@ -97,6 +97,10 @@ class Director(db.Model):
     def __repr__(self):
         return f"<Director {self.director_name}>"
 
+    @classmethod
+    def director_in(cls, director_name):
+        return Director.query.filter(Director.director_name == director_name).first()
+
 
 class FilmGenre(db.Model):
     """Model of film genre essence"""
