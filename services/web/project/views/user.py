@@ -1,0 +1,117 @@
+"""User methods CRUD"""
+
+from flask import request
+from project import models
+from flask_restplus import fields, Resource, Namespace
+from marshmallow import ValidationError
+
+
+api = Namespace("users", description="User Registration")
+
+user_model = api.model(
+    "User",
+    {
+        "username": fields.String("Enter Name"),
+        "password": fields.String("Enter Password"),
+    },
+)
+
+
+@api.route("/get")
+class GetUser(Resource):
+    """Method GET"""
+
+    @staticmethod
+    def get() -> tuple:
+        """Get data about all users
+        Format: json
+        """
+
+        users = models.UserModel.query.all()
+        if users:
+            user_list = [
+                {
+                    "user_id": user.user_id,
+                    "username": user.username,
+                    "password": user.password,
+                }
+                for user in users
+            ]
+            return {"users": user_list}, 200
+        return {"Error": "Users was not found"}, 404
+
+
+@api.route("/get/<int:user_id>")
+class GetOneUser(Resource):
+    """Method GET one user"""
+
+    @staticmethod
+    def get(user_id: int) -> tuple:
+        """Get data about one user
+        Format: json
+        """
+
+        user = (
+            models.db.session.query(models.UserModel).filter_by(user_id=user_id).first()
+        )
+        if user:
+            return {
+                "User": user.user_id,
+                "user_id": user.user_id,
+                "username": user.username,
+                "password": user.password,
+            }, 200
+        return {"Error": "User was not found"}, 404
+
+
+@api.route("/post")
+class PostUser(Resource):
+    """Method POST"""
+
+    @staticmethod
+    @api.expect(user_model)
+    def post() -> tuple:
+        """Post data about user to server"""
+
+        try:
+            user = models.UserModel(
+                username=request.json["username"], password=request.json["password"]
+            )
+            models.db.session.add(user)
+            models.db.session.commit()
+            return {"message": "User added to database"}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
+
+
+@api.route("/put/<int:user_id>")
+class PutUser(Resource):
+    """Method PUT"""
+
+    @staticmethod
+    @api.expect(user_model)
+    def put(user_id):
+        """Update data about user"""
+
+        try:
+            user = models.UserModel.query.get(user_id)
+            user.username = request.json["username"]
+            user.password = request.json["password"]
+            models.db.session.commit()
+            return {"message": "data updated"}, 201
+        except ValidationError as err:
+            return {"Error ": str(err)}, 400
+
+
+@api.route("/delete/<int:user_id>")
+class DeleteUser(Resource):
+    """Method DELETE"""
+
+    @staticmethod
+    def delete(user_id) -> tuple:
+        """Removes a user by his id"""
+
+        user = models.UserModel.query.get(user_id)
+        models.db.session.delete(user)
+        models.db.session.commit()
+        return {"message": "data deleted successfully"}, 201

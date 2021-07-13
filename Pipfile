@@ -12,6 +12,16 @@ requests = "*"
 flask-migrate = "*"
 uwsgi = "*"
 gunicorn = "*"
+flask-login = "*"
+flask-restx = "*"
+flask-marshmallow = "*"
+flask-restplus = "*"
+werkzeug = "==0.16.1"
+marshmallow-sqlalchemy = "*"
+marshmallow = "*"
+pylint = "*"
+faker = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
