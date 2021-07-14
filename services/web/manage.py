@@ -47,6 +47,9 @@ def insert_data():
         count += 1
         models.db.session.add(director_in)
         models.db.session.commit()
+    dir_unk = models.Director(director_name='unknown')
+    models.db.session.add(dir_unk)
+    models.db.session.commit()
 
     count_directors = models.Director.query.order_by(models.Director.director_id.desc()).first()
     count_users = models.UserModel.query.order_by(models.UserModel.user_id.desc()).first()

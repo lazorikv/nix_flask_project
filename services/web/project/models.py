@@ -87,7 +87,7 @@ class Director(db.Model):
 
     __tablename__ = "director"
 
-    director_id = db.Column(db.Integer, primary_key=True)
+    director_id = db.Column(db.Integer, primary_key=True, )
     director_name = db.Column(db.String(100), nullable=False)
     directed_film = db.relationship("FilmModel", backref="directed_film")
 

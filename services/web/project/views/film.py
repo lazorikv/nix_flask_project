@@ -1,8 +1,9 @@
 """Film methods CRUD"""
 
 from flask import request
+from project.args import sorting
 from project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
-from flask_restplus import fields, Resource, Namespace, reqparse
+from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from sqlalchemy import String, func
 from sqlalchemy.dialects.postgresql import ARRAY
@@ -10,11 +11,6 @@ from project.paginate import get_paginated_list
 
 api = Namespace("films", description="Films in library")
 
-pagination = reqparse.RequestParser()
-pagination.add_argument('page', type=int, required=False,
-                        default=1, help='Page number')
-pagination.add_argument('per_page', type=int, required=False,
-                        choices=[10, 20, 30, 40, 50])
 
 film_model = api.model(
     "Film",
@@ -47,14 +43,14 @@ class GetFilms(Resource):
 
         films = (
             db.session.query(FilmModel, Director, UserModel.username, genre_agg)
-                .select_from(FilmModel)
-                .join(FilmGenre)
-                .join(GenreModel)
-                .join(UserModel)
-                .join(Director)
-                .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
-                .filter(FilmModel.film_id == film_id)
-                .all()
+            .select_from(FilmModel)
+            .join(FilmGenre)
+            .join(GenreModel)
+            .join(UserModel)
+            .join(Director)
+            .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
+            .filter(FilmModel.film_id == film_id)
+            .all()
         )
         if films:
             result = [
@@ -79,31 +75,52 @@ class GetOneGenre(Resource):
     """Method GET all films"""
 
     @staticmethod
+    @api.expect(sorting, validate=True)
     def get() -> tuple:
         """Get data about all films
         Format: json
         """
-
+        args = sorting.parse_args()
+        start = args["start"]
+        limit = args["limit"]
+        sorting_data = args["sort_data"]
+        from_film = args["from"]
+        to_film = args["to"]
+        genre_film = args["genre_film"]
         genre_agg = func.array_agg(GenreModel.genre_name, type_=ARRAY(String)).label(
             "genres"
         )
         films = (
             db.session.query(FilmModel, Director, UserModel.username, genre_agg)
-                .select_from(FilmModel)
-                .join(FilmGenre)
-                .join(GenreModel)
-                .join(UserModel)
-                .join(Director)
-                .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
-                .all()
+            .select_from(FilmModel)
+            .join(FilmGenre)
+            .join(GenreModel)
+            .join(UserModel)
+            .join(Director)
+            .group_by(FilmModel.film_id, Director.director_id, UserModel.username)
         )
+        director_film = args["Director"]
+        search_film = args["search"]
+
+        if search_film:
+            films = films.filter(FilmModel.title.ilike(f'%{search_film}%'))
+        if director_film is not None:
+            films = films.filter(Director.director_name == director_film)
+        if sorting_data == "Rating":
+            films = films.order_by(FilmModel.rating.desc())
+        elif sorting_data == "Date Release":
+            films = films.order_by(FilmModel.year_release.desc())
+        if from_film and to_film:
+            films = films.filter(FilmModel.year_release.between(from_film, to_film))
+        if genre_film:
+            films = films.filter(GenreModel.genre_name == genre_film)
         if films:
             result = [
                 {
                     "title": film[0].title,
                     "release": str(film[0].year_release),
                     "genre": film.genres,
-                    "director": f"{film[1].director_name}",
+                    "director": film[1].director_name,
                     "description": film[0].description,
                     "rating": film[0].rating,
                     "poster": film[0].poster,
@@ -115,12 +132,11 @@ class GetOneGenre(Resource):
                 get_paginated_list(
                     result,
                     "",
-                    start=request.args.get("start", 1),
-                    limit=request.args.get("limit", 20),
+                    start=request.args.get("start", start),
+                    limit=request.args.get("limit", limit),
                 ),
                 200,
             )
-
         return {"Error": "Films was not found"}, 404
 
 
@@ -134,6 +150,8 @@ class PostGenre(Resource):
 
         try:
             director_in = request.json["director_name"]
+            if director_in == "":
+                director_in = "unknown"
             sm_director = Director.director_in(director_in)
             if sm_director:
                 director_sp_id = sm_director.director_id
@@ -143,7 +161,6 @@ class PostGenre(Resource):
                 db.session.commit()
                 sm_director = Director.director_in(director_in)
                 director_sp_id = sm_director.director_id
-
             film = FilmModel(
                 title=request.json["title"],
                 year_release=request.json["year_release"],
@@ -163,6 +180,8 @@ class PostGenre(Resource):
 
     @staticmethod
     def genre_post(list_genre):
+        """Adding genres to the database"""
+
         count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
         for genre in list_genre:
             sm_genre = GenreModel.genre_in(genre)
