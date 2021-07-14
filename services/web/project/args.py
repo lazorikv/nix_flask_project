@@ -1,3 +1,4 @@
+"""Arguments for request parser"""
 from flask_restplus import reqparse
 
 sorting = reqparse.RequestParser()
