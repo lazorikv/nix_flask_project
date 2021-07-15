@@ -13,4 +13,6 @@ fi
 
 python manage.py create_db
 python manage.py insert_db
+python manage.py create_admin
+python manage.py create_unknown
 exec "$@"

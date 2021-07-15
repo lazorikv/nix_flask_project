@@ -1,6 +1,7 @@
 """Film methods CRUD"""
 
 from flask import request
+from flask_login import current_user, login_required
 from project.args import sorting
 from project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
 from flask_restplus import fields, Resource, Namespace
@@ -22,7 +23,6 @@ film_model = api.model(
         "description": fields.String("Enter description of film"),
         "rating": fields.String("Enter film rating"),
         "poster": fields.String("Enter link to poster"),
-        "user_id": fields.String("Enter user_id"),
     },
 )
 
@@ -103,7 +103,7 @@ class GetOneGenre(Resource):
         search_film = args["search"]
 
         if search_film:
-            films = films.filter(FilmModel.title.ilike(f'%{search_film}%'))
+            films = films.filter(FilmModel.title.ilike(f"%{search_film}%"))
         if director_film is not None:
             films = films.filter(Director.director_name == director_film)
         if sorting_data == "Rating":
@@ -137,7 +137,7 @@ class GetOneGenre(Resource):
                 ),
                 200,
             )
-        return {"Error": "Films was not found"}, 404
+        return {"Error": "Films not found"}, 404
 
 
 @api.route("/post")
@@ -145,36 +145,39 @@ class PostGenre(Resource):
     """Method POST"""
 
     @api.expect(film_model)
+    @login_required
     def post(self) -> tuple:
         """Post data about film to db"""
 
         try:
-            director_in = request.json["director_name"]
-            if director_in == "":
-                director_in = "unknown"
-            sm_director = Director.director_in(director_in)
-            if sm_director:
-                director_sp_id = sm_director.director_id
-            else:
-                dir_name = Director(director_name=director_in)
-                db.session.add(dir_name)
-                db.session.commit()
+            if current_user.user_id:
+                director_in = request.json["director_name"]
+                if director_in == "":
+                    director_in = "unknown"
                 sm_director = Director.director_in(director_in)
-                director_sp_id = sm_director.director_id
-            film = FilmModel(
-                title=request.json["title"],
-                year_release=request.json["year_release"],
-                director_id=director_sp_id,
-                description=request.json["description"],
-                rating=request.json["rating"],
-                poster=request.json["poster"],
-                user_id=request.json["user_id"],
-            )
-            db.session.add(film)
-            db.session.commit()
-            genres = request.json["genres"]
-            self.genre_post(genres)
-            return {"message": "Film added to database"}, 201
+                if sm_director:
+                    director_sp_id = sm_director.director_id
+                else:
+                    dir_name = Director(director_name=director_in)
+                    db.session.add(dir_name)
+                    db.session.commit()
+                    sm_director = Director.director_in(director_in)
+                    director_sp_id = sm_director.director_id
+                film = FilmModel(
+                    title=request.json["title"],
+                    year_release=request.json["year_release"],
+                    director_id=director_sp_id,
+                    description=request.json["description"],
+                    rating=request.json["rating"],
+                    poster=request.json["poster"],
+                    user_id=current_user.user_id,
+                )
+                db.session.add(film)
+                db.session.commit()
+                genres = request.json["genres"]
+                self.genre_post(genres)
+                return {"message": "Film added to database"}, 201
+            return {"error": "Access to the requested resource is forbidden"}, 403
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -210,19 +213,22 @@ class PutGenre(Resource):
 
     @staticmethod
     @api.expect(film_model)
+    @login_required
     def put(film_id):
         """Update data about film"""
         try:
             film = FilmModel.query.get(film_id)
-            film.title = request.json["title"]
-            film.year_release = request.json["year_release"]
-            film.director_id = request.json["director_id"]
-            film.description = request.json["description"]
-            film.rating = request.json["rating"]
-            film.poster = request.json["poster"]
-            film.user_id = request.json["user_id"]
-            db.session.commit()
-            return {"message": "data updated"}, 201
+            if film.user_id == current_user.user_id or current_user.is_admin is True:
+                film.title = request.json["title"]
+                film.year_release = request.json["year_release"]
+                film.director_id = request.json["director_id"]
+                film.description = request.json["description"]
+                film.rating = request.json["rating"]
+                film.poster = request.json["poster"]
+                film.user_id = current_user.user_id
+                db.session.commit()
+                return {"message": "Data updated"}, 201
+            return {"error": "Access to the requested resource is forbidden"}, 403
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -232,9 +238,12 @@ class DeleteGenre(Resource):
     """Method DELETE"""
 
     @staticmethod
+    @login_required
     def delete(film_id) -> tuple:
         """Removes a film by id"""
-        film = FilmModel.query.get(film_id)
-        db.session.delete(film)
-        db.session.commit()
-        return {"message": "data deleted successfully"}, 201
+        film = FilmModel.query.filter(FilmModel.film_id == film_id).first()
+        if film.user_id == current_user.user_id or current_user.is_admin is True:
+            db.session.delete(film)
+            db.session.commit()
+            return {"message": "Data deleted successfully"}, 201
+        return {"error": "Access to the requested resource is forbidden"}, 403

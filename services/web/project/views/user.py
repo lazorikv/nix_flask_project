@@ -13,6 +13,7 @@ user_model = api.model(
     {
         "username": fields.String("Enter Name"),
         "password": fields.String("Enter Password"),
+        "is_admin": fields.Boolean("Enter status")
     },
 )
 
@@ -34,6 +35,7 @@ class GetUser(Resource):
                     "user_id": user.user_id,
                     "username": user.username,
                     "password": user.password,
+                    "is_admin": user.is_admin
                 }
                 for user in users
             ]
@@ -56,10 +58,10 @@ class GetOneUser(Resource):
         )
         if user:
             return {
-                "User": user.user_id,
                 "user_id": user.user_id,
                 "username": user.username,
                 "password": user.password,
+                "is_admin": user.is_admin
             }, 200
         return {"Error": "User was not found"}, 404
 
@@ -75,7 +77,8 @@ class PostUser(Resource):
 
         try:
             user = models.UserModel(
-                username=request.json["username"], password=request.json["password"]
+                username=request.json["username"], password=request.json["password"],
+                is_admin=request.json["is_admin"]
             )
             models.db.session.add(user)
             models.db.session.commit()
@@ -97,8 +100,9 @@ class PutUser(Resource):
             user = models.UserModel.query.get(user_id)
             user.username = request.json["username"]
             user.password = request.json["password"]
+            user.is_admin = request.json["is_admin"]
             models.db.session.commit()
-            return {"message": "data updated"}, 201
+            return {"message": "Data updated"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 

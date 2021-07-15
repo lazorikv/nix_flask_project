@@ -38,7 +38,7 @@ class GetDirector(Resource):
                 for director in directors
             ]
             return {"genres": director_list}, 200
-        return {"Error": "Directors was not found"}, 404
+        return {"Error": "Directors not found"}, 404
 
 
 @api.route("/get/<int:director_id>")
@@ -58,7 +58,7 @@ class GetOneDirector(Resource):
                 "director_id": director.director_id,
                 "director_name": director.director_name,
             }, 200
-        return {"Error": "Director was not found"}, 404
+        return {"Error": "Director not found"}, 404
 
 
 @api.route("/post")
@@ -105,7 +105,9 @@ class DeleteDirector(Resource):
     def delete(director_id) -> tuple:
         """Removes a director by id"""
 
-        genre = Director.query.get(director_id)
-        db.session.delete(genre)
-        db.session.commit()
-        return {"message": "data deleted successfully"}, 201
+        director = Director.query.get(director_id)
+        if director:
+            db.session.delete(director)
+            db.session.commit()
+            return {"message": "data deleted successfully"}, 201
+        return {"Error": "Director not found"}, 404
