@@ -1,23 +1,25 @@
 """Main module"""
 
-
-import yaml
 import logging.config
-from flask import Flask
+import yaml
+import os
+from flask import Flask, url_for
 from flask_login import LoginManager
 from flask_migrate import Migrate
-from flask_restplus import Api
+from flask_restplus import Api, specs
 from project import models
 from project.views.director import api as director_namespace
 from project.views.film import api as film_namespace
 from project.views.genre import api as genre_namespace
 from project.views.user import api as user_namespace
 from project.views.logining import api as auth_namespace
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 #  init app
 app = Flask(__name__)
 app.secret_key = "MY_SECRET_KEY"
 app.config.from_object("project.config.Config")
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 # init logging
 logging.basicConfig(filename='error.log', level=logging.DEBUG)

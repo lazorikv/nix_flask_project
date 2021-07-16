@@ -54,7 +54,6 @@ class GetOneGenre(Resource):
 
         if genre:
             return {
-                "Genre": genre.genre_id,
                 "genre_id": genre.genre_id,
                 "genre_name": genre.genre_name,
             }, 200
@@ -85,7 +84,7 @@ class PutGenre(Resource):
 
     @staticmethod
     @api.expect(genre_model)
-    def put(genre_id):
+    def put(genre_id: int) -> tuple:
         """Update data about genre"""
         try:
             genre = GenreModel.query.get(genre_id)
@@ -101,7 +100,7 @@ class DeleteGenre(Resource):
     """Method DELETE"""
 
     @staticmethod
-    def delete(genre_id) -> tuple:
+    def delete(genre_id: int) -> tuple:
         """Removes a genre by id"""
         genre = GenreModel.query.get(genre_id)
         if genre:

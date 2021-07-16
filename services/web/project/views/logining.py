@@ -36,7 +36,7 @@ class SignUp(Resource):
     @staticmethod
     @api.expect(sign_up)
     def post() -> tuple:
-        """Post data about director to db"""
+        """Sign up users in system"""
 
         try:
             if request.is_json:
@@ -58,7 +58,7 @@ class SignUp(Resource):
                 db.session.commit()
 
                 return {
-                    "message": f"User {new_user.username} has been created successfully."
+                    "message": f"User {new_user.username} has been created successfully"
                 }, 200
             return {"error": "The request payload is not in JSON format"}, 400
         except ValidationError as err:
@@ -83,12 +83,12 @@ class Login(Resource):
 
                 if not user and not check_password_hash(user.password, password):
                     return {
-                        "Error": "Please check your login details and try again."
+                        "Error": "Please check your login details and try again"
                     }, 400
                 login_user(user)
 
                 return {
-                    "Message": f"User {user.username} has been login successfully."
+                    "Message": f"User {user.username} has been login successfully"
                 }, 202
             return {"Error": "The request payload is not in JSON format"}, 401
 
@@ -105,4 +105,4 @@ class Logout(Resource):
             logout_user()
             return {"message": "User is logout"}
         except:
-            return {"Message": f"User is not logged in"}, 404
+            return {"message": "User is not logged in"}, 404
