@@ -37,7 +37,7 @@ class GetGenre(Resource):
                 for genre in genres
             ]
             return {"genres": genre_list}, 200
-        return {"Error": "Genres was not found"}, 404
+        return {"Error": "Genres not found"}, 404
 
 
 @api.route("/get/<int:genre_id>")
@@ -58,7 +58,7 @@ class GetOneGenre(Resource):
                 "genre_id": genre.genre_id,
                 "genre_name": genre.genre_name,
             }, 200
-        return {"Error": "Genre was not found"}, 404
+        return {"Error": "Genre not found"}, 404
 
 
 @api.route("/post")
@@ -104,6 +104,8 @@ class DeleteGenre(Resource):
     def delete(genre_id) -> tuple:
         """Removes a genre by id"""
         genre = GenreModel.query.get(genre_id)
-        db.session.delete(genre)
-        db.session.commit()
-        return {"message": "data deleted successfully"}, 201
+        if genre:
+            db.session.delete(genre)
+            db.session.commit()
+            return {"message": "data deleted successfully"}, 201
+        return {"Error": "Genre not found"}, 404

@@ -26,6 +26,7 @@ def insert_data():
         user_in = models.UserModel(
             username=faker.first_name(),
             password=faker.password(),
+            is_admin=False
         )
         count += 1
         models.db.session.add(user_in)
@@ -47,9 +48,6 @@ def insert_data():
         count += 1
         models.db.session.add(director_in)
         models.db.session.commit()
-    dir_unk = models.Director(director_name='unknown')
-    models.db.session.add(dir_unk)
-    models.db.session.commit()
 
     count_directors = models.Director.query.order_by(models.Director.director_id.desc()).first()
     count_users = models.UserModel.query.order_by(models.UserModel.user_id.desc()).first()
@@ -82,6 +80,24 @@ def insert_data():
         models.db.session.commit()
         count += 1
 
+    models.db.session.commit()
+
+
+@cli.command("create_admin")
+def create_admin():
+    admin_user = models.UserModel(
+        username="admin",
+        password="admin",
+        is_admin=True
+    )
+    models.db.session.add(admin_user)
+    models.db.session.commit()
+
+
+@cli.command("create_unknown")
+def create_unknown():
+    dir_unk = models.Director(director_name='unknown')
+    models.db.session.add(dir_unk)
     models.db.session.commit()
 
 

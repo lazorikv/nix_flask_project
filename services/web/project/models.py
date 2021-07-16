@@ -49,15 +49,17 @@ class UserModel(UserMixin, db.Model):
     user_id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(20), nullable=False)
     password = db.Column(db.String(), nullable=False)
+    is_admin = db.Column(db.Boolean, nullable=False)
     films = db.relationship("FilmModel", backref="film")
 
     def get_id(self):
         """Get user_id from table Users"""
         return self.user_id
 
-    def __init__(self, username, password):
+    def __init__(self, username, password, is_admin):
         self.username = username
         self.password = password
+        self.is_admin = is_admin
 
     def __repr__(self):
         return f"<User {self.username}>"
@@ -111,4 +113,4 @@ class FilmGenre(db.Model):
     genre_id = db.Column(
         db.Integer, db.ForeignKey("genre.genre_id", ondelete="CASCADE")
     )
-    film_id = db.Column(db.Integer, db.ForeignKey("film.film_id", ondelete="CASCADE"))
+    film_id = db.Column(db.Integer, db.ForeignKey("film.film_id"))
