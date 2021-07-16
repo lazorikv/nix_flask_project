@@ -37,7 +37,7 @@ class GetDirector(Resource):
                 }
                 for director in directors
             ]
-            return {"genres": director_list}, 200
+            return {"directors": director_list}, 200
         return {"Error": "Directors not found"}, 404
 
 

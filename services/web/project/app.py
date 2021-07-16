@@ -12,13 +12,13 @@ from project.views.film import api as film_namespace
 from project.views.genre import api as genre_namespace
 from project.views.user import api as user_namespace
 from project.views.logining import api as auth_namespace
-from werkzeug.middleware.proxy_fix import ProxyFix
+from werkzeug.contrib.fixers import ProxyFix
 
 #  init app
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app)
 app.secret_key = "MY_SECRET_KEY"
 app.config.from_object("project.config.Config")
-app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 # init logging
 logging.basicConfig(filename='error.log', level=logging.DEBUG)

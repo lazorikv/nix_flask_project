@@ -691,3 +691,76 @@
 2021-07-16 12:04:27,992 - werkzeug - WARNING -  * Debugger is active!
 2021-07-16 12:04:27,994 - werkzeug - INFO -  * Debugger PIN: 468-209-690
 2021-07-16 12:04:29,022 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:04:29] "DELETE /api/v1/users/delete/2 HTTP/1.1" 201 -
+2021-07-16 18:23:17,413 - file - DEBUG - Debug FILE
+2021-07-16 18:23:18,031 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:18,727 - file - DEBUG - Debug FILE
+2021-07-16 18:23:21,707 - file - DEBUG - Debug FILE
+2021-07-16 18:23:21,864 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:22,424 - file - DEBUG - Debug FILE
+2021-07-16 18:23:30,293 - file - DEBUG - Debug FILE
+2021-07-16 18:23:30,467 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:30,999 - file - DEBUG - Debug FILE
+2021-07-16 18:23:33,431 - file - DEBUG - Debug FILE
+2021-07-16 18:23:33,590 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:34,134 - file - DEBUG - Debug FILE
+2021-07-16 18:23:36,573 - file - DEBUG - Debug FILE
+2021-07-16 18:23:36,727 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:37,323 - file - DEBUG - Debug FILE
+2021-07-16 18:23:37,375 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 18:23:37,376 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 18:23:39,475 - file - DEBUG - Debug FILE
+2021-07-16 18:23:39,625 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:23:40,198 - file - DEBUG - Debug FILE
+2021-07-16 18:23:40,240 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 18:23:40,241 - werkzeug - INFO -  * Debugger PIN: 171-707-236
+2021-07-16 18:24:48,516 - file - DEBUG - Debug FILE
+2021-07-16 18:24:48,678 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:24:49,242 - file - DEBUG - Debug FILE
+2021-07-16 18:24:51,892 - file - DEBUG - Debug FILE
+2021-07-16 18:24:52,060 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:24:52,620 - file - DEBUG - Debug FILE
+2021-07-16 18:24:59,737 - file - DEBUG - Debug FILE
+2021-07-16 18:24:59,909 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:25:00,493 - file - DEBUG - Debug FILE
+2021-07-16 18:25:02,987 - file - DEBUG - Debug FILE
+2021-07-16 18:25:03,158 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:25:03,712 - file - DEBUG - Debug FILE
+2021-07-16 18:25:06,610 - file - DEBUG - Debug FILE
+2021-07-16 18:25:06,787 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:25:07,444 - file - DEBUG - Debug FILE
+2021-07-16 18:25:07,506 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 18:25:07,508 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 18:25:10,539 - file - DEBUG - Debug FILE
+2021-07-16 18:25:10,732 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:25:11,298 - file - DEBUG - Debug FILE
+2021-07-16 18:25:11,332 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 18:25:11,346 - werkzeug - INFO -  * Debugger PIN: 877-309-121
+2021-07-16 18:25:37,424 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:25:37] "GET / HTTP/1.1" 200 -
+2021-07-16 18:25:38,375 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:25:38] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-16 18:25:38,474 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:25:38] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-16 18:25:59,861 - file - DEBUG - Debug FILE
+2021-07-16 18:26:00,288 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:00,831 - file - DEBUG - Debug FILE
+2021-07-16 18:26:03,373 - file - DEBUG - Debug FILE
+2021-07-16 18:26:03,541 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:04,120 - file - DEBUG - Debug FILE
+2021-07-16 18:26:10,485 - file - DEBUG - Debug FILE
+2021-07-16 18:26:10,672 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:11,245 - file - DEBUG - Debug FILE
+2021-07-16 18:26:13,566 - file - DEBUG - Debug FILE
+2021-07-16 18:26:13,752 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:14,306 - file - DEBUG - Debug FILE
+2021-07-16 18:26:16,631 - file - DEBUG - Debug FILE
+2021-07-16 18:26:16,808 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:17,385 - file - DEBUG - Debug FILE
+2021-07-16 18:26:17,455 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 18:26:17,458 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 18:26:19,528 - file - DEBUG - Debug FILE
+2021-07-16 18:26:19,691 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 18:26:20,249 - file - DEBUG - Debug FILE
+2021-07-16 18:26:20,298 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 18:26:20,302 - werkzeug - INFO -  * Debugger PIN: 294-614-885
+2021-07-16 18:26:27,043 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:26:27] "GET / HTTP/1.1" 200 -
+2021-07-16 18:26:27,427 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:26:27] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-16 18:26:27,429 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:26:27] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-16 18:26:35,515 - werkzeug - INFO - 172.26.0.1 - - [16/Jul/2021 18:26:35] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
