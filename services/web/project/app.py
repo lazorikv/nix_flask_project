@@ -2,11 +2,10 @@
 
 import logging.config
 import yaml
-import os
-from flask import Flask, url_for
+from flask import Flask
 from flask_login import LoginManager
 from flask_migrate import Migrate
-from flask_restplus import Api, specs
+from flask_restplus import Api
 from project import models
 from project.views.director import api as director_namespace
 from project.views.film import api as film_namespace

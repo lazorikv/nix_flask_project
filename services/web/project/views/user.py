@@ -115,7 +115,7 @@ class DeleteUser(Resource):
     def delete(user_id: int) -> tuple:
         """Removes a user by his id"""
 
-        user = models.UserModel.query.get(user_id)
+        user = models.UserModel.query.filter(models.UserModel.user_id == user_id).first()
         models.db.session.delete(user)
         models.db.session.commit()
         return {"message": "data deleted successfully"}, 201

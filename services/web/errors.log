@@ -1,0 +1,693 @@
+2021-07-14 15:36:44,438 - file - DEBUG - Debug FILE
+2021-07-14 15:36:44,593 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-14 15:36:45,145 - file - DEBUG - Debug FILE
+2021-07-14 15:36:47,508 - file - DEBUG - Debug FILE
+2021-07-14 15:36:47,668 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-14 15:36:48,187 - file - DEBUG - Debug FILE
+2021-07-14 15:36:54,415 - file - DEBUG - Debug FILE
+2021-07-14 15:36:54,582 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-14 15:36:55,170 - file - DEBUG - Debug FILE
+2021-07-14 15:36:55,240 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-14 15:36:55,241 - werkzeug - INFO -  * Restarting with stat
+2021-07-14 15:36:57,257 - file - DEBUG - Debug FILE
+2021-07-14 15:36:57,413 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-14 15:36:57,958 - file - DEBUG - Debug FILE
+2021-07-14 15:36:58,001 - werkzeug - WARNING -  * Debugger is active!
+2021-07-14 15:36:58,014 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-14 15:43:37,208 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-14 15:43:37,372 - werkzeug - INFO -  * Restarting with stat
+2021-07-14 15:43:39,553 - file - DEBUG - Debug FILE
+2021-07-14 15:43:39,712 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-14 15:43:40,334 - file - DEBUG - Debug FILE
+2021-07-14 15:43:40,375 - werkzeug - WARNING -  * Debugger is active!
+2021-07-14 15:43:40,376 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 06:41:20,509 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 06:41:20,662 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 06:41:45,006 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 06:41:47,234 - file - DEBUG - Debug FILE
+2021-07-15 06:41:47,396 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 06:41:47,963 - file - DEBUG - Debug FILE
+2021-07-15 06:41:47,994 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 06:41:48,006 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 06:42:25,987 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 06:42:25] "GET /api/v1/films/get/456 HTTP/1.1" 404 -
+2021-07-15 06:42:33,976 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 06:42:33] "GET /api/v1/films/get/4 HTTP/1.1" 200 -
+2021-07-15 06:42:57,493 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 06:42:57,656 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 06:43:11,842 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 06:43:13,924 - file - DEBUG - Debug FILE
+2021-07-15 06:43:14,082 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 06:43:14,639 - file - DEBUG - Debug FILE
+2021-07-15 06:43:14,658 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 06:43:14,676 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 07:38:55,346 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 07:38:55,485 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 07:38:57,540 - file - DEBUG - Debug FILE
+2021-07-15 07:38:57,709 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 07:38:58,251 - file - DEBUG - Debug FILE
+2021-07-15 07:38:58,303 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 07:38:58,304 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 07:40:30,393 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:40:30] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 07:46:11,290 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login HTTP/1.1" 500 -
+2021-07-15 07:46:11,422 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-15 07:46:11,424 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+2021-07-15 07:46:11,440 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-15 07:46:11,840 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-15 07:46:11,892 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:46:11] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-15 07:47:44,879 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:47:44] "GET /auth/signup HTTP/1.1" 500 -
+2021-07-15 07:48:35,014 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:48:35] "POST /auth/signup HTTP/1.1" 200 -
+2021-07-15 07:48:50,370 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:48:50] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 07:49:46,686 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:49:46] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 07:50:41,425 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:50:41] "POST /films/post HTTP/1.1" 404 -
+2021-07-15 07:52:23,633 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:52:23] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 07:52:50,610 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 07:52:50,789 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 07:52:52,973 - file - DEBUG - Debug FILE
+2021-07-15 07:52:53,133 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 07:52:53,703 - file - DEBUG - Debug FILE
+2021-07-15 07:52:53,719 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 07:52:53,732 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 07:52:53,982 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 07:52:53] "POST /api/v1/films/post HTTP/1.1" 201 -
+2021-07-15 08:33:23,719 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 08:33:23,859 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:33:25,854 - file - DEBUG - Debug FILE
+2021-07-15 08:34:56,499 - file - DEBUG - Debug FILE
+2021-07-15 08:34:56,657 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:34:57,190 - file - DEBUG - Debug FILE
+2021-07-15 08:34:59,697 - file - DEBUG - Debug FILE
+2021-07-15 08:34:59,854 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:35:00,384 - file - DEBUG - Debug FILE
+2021-07-15 08:35:07,108 - file - DEBUG - Debug FILE
+2021-07-15 08:35:07,276 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:35:07,810 - file - DEBUG - Debug FILE
+2021-07-15 08:35:07,878 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 08:35:07,880 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:35:09,862 - file - DEBUG - Debug FILE
+2021-07-15 08:35:10,021 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:35:10,568 - file - DEBUG - Debug FILE
+2021-07-15 08:35:10,644 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:35:10,645 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:35:54,203 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:35:54] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 08:38:01,395 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:38:01] "POST /api/v1/films/post HTTP/1.1" 201 -
+2021-07-15 08:38:38,931 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:38:38] "DELETE /api/v1/films/delete/2 HTTP/1.1" 500 -
+2021-07-15 08:39:03,425 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:39:03] "POST /api/v1/films/delete/2 HTTP/1.1" 405 -
+2021-07-15 08:39:10,066 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:39:10] "GET /api/v1/films/delete/2 HTTP/1.1" 405 -
+2021-07-15 08:40:01,829 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:40:01] "GET /api/v1/films/delete/152 HTTP/1.1" 405 -
+2021-07-15 08:40:14,400 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:40:14] "DELETE /api/v1/films/delete/152 HTTP/1.1" 201 -
+2021-07-15 08:40:21,541 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:40:21] "DELETE /api/v1/films/delete/2 HTTP/1.1" 201 -
+2021-07-15 08:41:46,139 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:41:46] "DELETE /api/v1/films/delete/1 HTTP/1.1" 500 -
+2021-07-15 08:45:41,089 - file - DEBUG - Debug FILE
+2021-07-15 08:45:41,238 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:45:41,755 - file - DEBUG - Debug FILE
+2021-07-15 08:45:44,057 - file - DEBUG - Debug FILE
+2021-07-15 08:45:44,203 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:45:44,728 - file - DEBUG - Debug FILE
+2021-07-15 08:45:51,059 - file - DEBUG - Debug FILE
+2021-07-15 08:45:51,228 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:45:51,767 - file - DEBUG - Debug FILE
+2021-07-15 08:45:51,834 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 08:45:51,836 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:45:53,828 - file - DEBUG - Debug FILE
+2021-07-15 08:45:54,000 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:45:54,524 - file - DEBUG - Debug FILE
+2021-07-15 08:45:54,536 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:45:54,537 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:46:11,122 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:46:11] "DELETE /api/v1/films/delete/1 HTTP/1.1" 201 -
+2021-07-15 08:48:44,162 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 08:48:44,299 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:48:46,236 - file - DEBUG - Debug FILE
+2021-07-15 08:48:46,389 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:48:46,908 - file - DEBUG - Debug FILE
+2021-07-15 08:48:46,942 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:48:46,956 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:49:06,886 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:49:06] "DELETE /api/v1/films/delete/19 HTTP/1.1" 500 -
+2021-07-15 08:50:46,851 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:50:46] "DELETE /api/v1/films/delete/12 HTTP/1.1" 201 -
+2021-07-15 08:51:16,988 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 08:51:17,152 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:51:19,201 - file - DEBUG - Debug FILE
+2021-07-15 08:51:19,359 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:51:19,918 - file - DEBUG - Debug FILE
+2021-07-15 08:51:19,970 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:51:19,971 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:51:29,748 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:51:29] "DELETE /api/v1/films/delete/11 HTTP/1.1" 500 -
+2021-07-15 08:51:38,301 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:51:38] "DELETE /api/v1/films/delete/19 HTTP/1.1" 500 -
+2021-07-15 08:52:45,825 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/models.py', reloading
+2021-07-15 08:52:45,983 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:52:48,022 - file - DEBUG - Debug FILE
+2021-07-15 08:52:48,168 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:52:48,690 - file - DEBUG - Debug FILE
+2021-07-15 08:52:48,731 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:52:48,732 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:52:56,640 - file - DEBUG - Debug FILE
+2021-07-15 08:52:56,795 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:52:57,308 - file - DEBUG - Debug FILE
+2021-07-15 08:52:59,680 - file - DEBUG - Debug FILE
+2021-07-15 08:52:59,843 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:53:00,374 - file - DEBUG - Debug FILE
+2021-07-15 08:53:06,746 - file - DEBUG - Debug FILE
+2021-07-15 08:53:06,921 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:53:07,460 - file - DEBUG - Debug FILE
+2021-07-15 08:53:07,529 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 08:53:07,532 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:53:09,508 - file - DEBUG - Debug FILE
+2021-07-15 08:53:09,685 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:53:10,268 - file - DEBUG - Debug FILE
+2021-07-15 08:53:10,312 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:53:10,313 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:53:11,198 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:53:11] "DELETE /api/v1/films/delete/19 HTTP/1.1" 201 -
+2021-07-15 08:54:07,491 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 08:54:07,632 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:54:09,710 - file - DEBUG - Debug FILE
+2021-07-15 08:54:09,869 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:54:10,379 - file - DEBUG - Debug FILE
+2021-07-15 08:54:10,430 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:54:10,431 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:54:18,474 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:54:18] "DELETE /api/v1/films/delete/21 HTTP/1.1" 403 -
+2021-07-15 08:55:22,959 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 08:55:23,104 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:55:25,114 - file - DEBUG - Debug FILE
+2021-07-15 08:55:25,260 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:55:25,779 - file - DEBUG - Debug FILE
+2021-07-15 08:55:25,814 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:55:25,819 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:55:36,643 - file - DEBUG - Debug FILE
+2021-07-15 08:55:36,798 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:55:37,305 - file - DEBUG - Debug FILE
+2021-07-15 08:55:39,611 - file - DEBUG - Debug FILE
+2021-07-15 08:55:39,762 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:55:40,268 - file - DEBUG - Debug FILE
+2021-07-15 08:55:46,112 - file - DEBUG - Debug FILE
+2021-07-15 08:55:46,265 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:55:46,826 - file - DEBUG - Debug FILE
+2021-07-15 08:55:46,876 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 08:55:46,877 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 08:55:48,981 - file - DEBUG - Debug FILE
+2021-07-15 08:55:49,131 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 08:55:49,664 - file - DEBUG - Debug FILE
+2021-07-15 08:55:49,685 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 08:55:49,702 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 08:58:41,596 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:58:41] "POST /auth/signup HTTP/1.1" 200 -
+2021-07-15 08:58:53,918 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 08:58:53] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 09:00:23,272 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:00:23] "DELETE /api/v1/films/delete/2 HTTP/1.1" 403 -
+2021-07-15 09:01:03,120 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 09:01:03,308 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:01:05,451 - file - DEBUG - Debug FILE
+2021-07-15 09:01:05,603 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:01:06,123 - file - DEBUG - Debug FILE
+2021-07-15 09:01:06,149 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:01:06,193 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 09:01:11,347 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:01:11] "DELETE /api/v1/films/delete/2 HTTP/1.1" 403 -
+2021-07-15 09:03:46,546 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/auth.py', reloading
+2021-07-15 09:03:46,722 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:03:48,691 - file - DEBUG - Debug FILE
+2021-07-15 09:03:48,842 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:03:49,429 - file - DEBUG - Debug FILE
+2021-07-15 09:03:49,436 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:03:49,466 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 09:04:00,833 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:04:00] "GET /auth/logout HTTP/1.1" 500 -
+2021-07-15 09:05:08,996 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:05:08] "GET /api/v1/films/delete/5 HTTP/1.1" 405 -
+2021-07-15 09:05:15,054 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:05:15] "DELETE /api/v1/films/delete/5 HTTP/1.1" 403 -
+2021-07-15 09:05:42,923 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/auth.py', reloading
+2021-07-15 09:05:43,095 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:05:45,200 - file - DEBUG - Debug FILE
+2021-07-15 09:05:45,360 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:05:45,891 - file - DEBUG - Debug FILE
+2021-07-15 09:05:45,939 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:05:45,942 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 09:05:54,156 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:05:54] "GET /auth/logout HTTP/1.1" 200 -
+2021-07-15 09:06:08,340 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:06:08] "DELETE /api/v1/films/delete/15 HTTP/1.1" 500 -
+2021-07-15 09:06:23,920 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:06:23] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 09:06:31,471 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:06:31] "POST /api/v1/films/delete/15 HTTP/1.1" 405 -
+2021-07-15 09:06:36,728 - werkzeug - INFO - 172.22.0.1 - - [15/Jul/2021 09:06:36] "DELETE /api/v1/films/delete/15 HTTP/1.1" 403 -
+2021-07-15 09:12:13,979 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 09:12:14,134 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:12:16,113 - file - DEBUG - Debug FILE
+2021-07-15 09:12:16,264 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:16,808 - file - DEBUG - Debug FILE
+2021-07-15 09:12:16,841 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:12:16,852 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 09:12:24,471 - file - DEBUG - Debug FILE
+2021-07-15 09:12:24,624 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:25,137 - file - DEBUG - Debug FILE
+2021-07-15 09:12:27,502 - file - DEBUG - Debug FILE
+2021-07-15 09:12:27,673 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:28,215 - file - DEBUG - Debug FILE
+2021-07-15 09:12:34,154 - file - DEBUG - Debug FILE
+2021-07-15 09:12:34,320 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:34,866 - file - DEBUG - Debug FILE
+2021-07-15 09:12:37,096 - file - DEBUG - Debug FILE
+2021-07-15 09:12:37,251 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:37,785 - file - DEBUG - Debug FILE
+2021-07-15 09:12:39,983 - file - DEBUG - Debug FILE
+2021-07-15 09:12:40,133 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:40,684 - file - DEBUG - Debug FILE
+2021-07-15 09:12:40,739 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 09:12:40,741 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:12:42,748 - file - DEBUG - Debug FILE
+2021-07-15 09:12:42,904 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:12:43,447 - file - DEBUG - Debug FILE
+2021-07-15 09:12:43,500 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:12:43,502 - werkzeug - INFO -  * Debugger PIN: 242-176-978
+2021-07-15 09:13:57,728 - file - DEBUG - Debug FILE
+2021-07-15 09:13:57,888 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:13:58,432 - file - DEBUG - Debug FILE
+2021-07-15 09:14:00,858 - file - DEBUG - Debug FILE
+2021-07-15 09:14:01,030 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:01,565 - file - DEBUG - Debug FILE
+2021-07-15 09:14:07,483 - file - DEBUG - Debug FILE
+2021-07-15 09:14:07,639 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:08,171 - file - DEBUG - Debug FILE
+2021-07-15 09:14:10,461 - file - DEBUG - Debug FILE
+2021-07-15 09:14:10,628 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:11,162 - file - DEBUG - Debug FILE
+2021-07-15 09:14:13,348 - file - DEBUG - Debug FILE
+2021-07-15 09:14:13,506 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:14,063 - file - DEBUG - Debug FILE
+2021-07-15 09:14:14,119 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 09:14:14,121 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:14:16,233 - file - DEBUG - Debug FILE
+2021-07-15 09:14:16,399 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:16,989 - file - DEBUG - Debug FILE
+2021-07-15 09:14:16,990 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:14:16,991 - werkzeug - INFO -  * Debugger PIN: 122-334-590
+2021-07-15 09:14:31,328 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 09:14:31,485 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:14:33,624 - file - DEBUG - Debug FILE
+2021-07-15 09:14:33,780 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:14:34,326 - file - DEBUG - Debug FILE
+2021-07-15 09:14:34,350 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:14:34,362 - werkzeug - INFO -  * Debugger PIN: 122-334-590
+2021-07-15 09:15:02,287 - file - DEBUG - Debug FILE
+2021-07-15 09:15:02,440 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:02,966 - file - DEBUG - Debug FILE
+2021-07-15 09:15:05,388 - file - DEBUG - Debug FILE
+2021-07-15 09:15:05,547 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:06,077 - file - DEBUG - Debug FILE
+2021-07-15 09:15:12,104 - file - DEBUG - Debug FILE
+2021-07-15 09:15:12,264 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:12,790 - file - DEBUG - Debug FILE
+2021-07-15 09:15:15,043 - file - DEBUG - Debug FILE
+2021-07-15 09:15:15,203 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:15,732 - file - DEBUG - Debug FILE
+2021-07-15 09:15:18,030 - file - DEBUG - Debug FILE
+2021-07-15 09:15:18,191 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:18,746 - file - DEBUG - Debug FILE
+2021-07-15 09:15:18,819 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 09:15:18,820 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 09:15:20,862 - file - DEBUG - Debug FILE
+2021-07-15 09:15:21,031 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 09:15:21,622 - file - DEBUG - Debug FILE
+2021-07-15 09:15:21,646 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 09:15:21,658 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 12:25:38,776 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:25:38] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+2021-07-15 12:42:40,102 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 12:42:40,249 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 12:42:42,509 - file - DEBUG - Debug FILE
+2021-07-15 12:42:42,689 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:42:43,294 - file - DEBUG - Debug FILE
+2021-07-15 12:42:43,294 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 12:42:43,312 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 12:43:45,845 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:43:45] "POST /auth/signup HTTP/1.1" 200 -
+2021-07-15 12:43:55,551 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:43:55] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 12:44:07,411 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:44:07] "POST /api/v1/films/delete/15 HTTP/1.1" 405 -
+2021-07-15 12:44:12,127 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:44:12] "DELETE /api/v1/films/delete/15 HTTP/1.1" 403 -
+2021-07-15 12:56:14,654 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-15 12:56:14,809 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 12:56:16,947 - file - DEBUG - Debug FILE
+2021-07-15 12:56:17,118 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:17,674 - file - DEBUG - Debug FILE
+2021-07-15 12:56:17,705 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 12:56:17,715 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 12:56:26,212 - file - DEBUG - Debug FILE
+2021-07-15 12:56:26,369 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:26,916 - file - DEBUG - Debug FILE
+2021-07-15 12:56:29,488 - file - DEBUG - Debug FILE
+2021-07-15 12:56:29,656 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:30,206 - file - DEBUG - Debug FILE
+2021-07-15 12:56:36,054 - file - DEBUG - Debug FILE
+2021-07-15 12:56:36,229 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:36,774 - file - DEBUG - Debug FILE
+2021-07-15 12:56:39,102 - file - DEBUG - Debug FILE
+2021-07-15 12:56:39,256 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:39,778 - file - DEBUG - Debug FILE
+2021-07-15 12:56:42,041 - file - DEBUG - Debug FILE
+2021-07-15 12:56:42,231 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:42,777 - file - DEBUG - Debug FILE
+2021-07-15 12:56:42,838 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 12:56:42,841 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 12:56:44,948 - file - DEBUG - Debug FILE
+2021-07-15 12:56:45,119 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:56:45,675 - file - DEBUG - Debug FILE
+2021-07-15 12:56:45,705 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 12:56:45,731 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 12:58:53,444 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 12:58:53,598 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 12:58:55,714 - file - DEBUG - Debug FILE
+2021-07-15 12:58:55,898 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 12:58:56,447 - file - DEBUG - Debug FILE
+2021-07-15 12:58:56,458 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 12:58:56,475 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 12:59:33,964 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 12:59:33] "POST /auth/signup HTTP/1.1" 500 -
+2021-07-15 13:00:39,658 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/auth.py', reloading
+2021-07-15 13:00:39,829 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:01:27,928 - file - DEBUG - Debug FILE
+2021-07-15 13:01:28,094 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:28,650 - file - DEBUG - Debug FILE
+2021-07-15 13:01:31,223 - file - DEBUG - Debug FILE
+2021-07-15 13:01:31,399 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:31,998 - file - DEBUG - Debug FILE
+2021-07-15 13:01:38,525 - file - DEBUG - Debug FILE
+2021-07-15 13:01:38,676 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:39,226 - file - DEBUG - Debug FILE
+2021-07-15 13:01:41,595 - file - DEBUG - Debug FILE
+2021-07-15 13:01:41,745 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:42,275 - file - DEBUG - Debug FILE
+2021-07-15 13:01:44,719 - file - DEBUG - Debug FILE
+2021-07-15 13:01:44,892 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:45,483 - file - DEBUG - Debug FILE
+2021-07-15 13:01:45,554 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 13:01:45,555 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:01:47,771 - file - DEBUG - Debug FILE
+2021-07-15 13:01:47,939 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:01:48,522 - file - DEBUG - Debug FILE
+2021-07-15 13:01:48,531 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:01:48,541 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:01:54,022 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:01:54] "POST /auth/signup HTTP/1.1" 500 -
+2021-07-15 13:03:19,494 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/auth.py', reloading
+2021-07-15 13:03:19,669 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:03:21,966 - file - DEBUG - Debug FILE
+2021-07-15 13:03:22,140 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:03:22,749 - file - DEBUG - Debug FILE
+2021-07-15 13:03:22,801 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:03:22,802 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:03:38,844 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:03:38] "POST /auth/signup HTTP/1.1" 500 -
+2021-07-15 13:03:58,664 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:03:58] "POST /auth/signup HTTP/1.1" 200 -
+2021-07-15 13:04:11,360 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:04:11] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 13:04:21,267 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:04:21] "DELETE /api/v1/films/delete/15 HTTP/1.1" 403 -
+2021-07-15 13:05:02,172 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:05:02] "POST /auth/login HTTP/1.1" 200 -
+2021-07-15 13:05:29,515 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:05:29] "DELETE /api/v1/films/delete/15 HTTP/1.1" 201 -
+2021-07-15 13:23:38,975 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/auth.py', reloading
+2021-07-15 13:23:39,170 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:27:34,637 - file - DEBUG - Debug FILE
+2021-07-15 13:27:34,783 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:35,269 - file - DEBUG - Debug FILE
+2021-07-15 13:27:37,498 - file - DEBUG - Debug FILE
+2021-07-15 13:27:37,641 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:38,130 - file - DEBUG - Debug FILE
+2021-07-15 13:27:44,023 - file - DEBUG - Debug FILE
+2021-07-15 13:27:44,175 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:44,678 - file - DEBUG - Debug FILE
+2021-07-15 13:27:46,794 - file - DEBUG - Debug FILE
+2021-07-15 13:27:46,946 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:47,442 - file - DEBUG - Debug FILE
+2021-07-15 13:27:49,640 - file - DEBUG - Debug FILE
+2021-07-15 13:27:49,791 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:50,297 - file - DEBUG - Debug FILE
+2021-07-15 13:27:50,358 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-15 13:27:50,359 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:27:52,274 - file - DEBUG - Debug FILE
+2021-07-15 13:27:52,436 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:27:52,975 - file - DEBUG - Debug FILE
+2021-07-15 13:27:53,027 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:27:53,036 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:28:03,820 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:03] "GET / HTTP/1.1" 200 -
+2021-07-15 13:28:04,003 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /swaggerui/droid-sans.css HTTP/1.1" 200 -
+2021-07-15 13:28:04,004 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+2021-07-15 13:28:04,005 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+2021-07-15 13:28:04,015 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+2021-07-15 13:28:04,445 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 13:28:04,447 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:28:04] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 13:31:39,664 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/user.py', reloading
+2021-07-15 13:31:39,809 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:31:41,739 - file - DEBUG - Debug FILE
+2021-07-15 13:31:41,889 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:31:42,388 - file - DEBUG - Debug FILE
+2021-07-15 13:31:42,435 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:31:42,436 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:31:52,569 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:31:52] "GET / HTTP/1.1" 200 -
+2021-07-15 13:31:53,186 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:31:53] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 13:31:53,196 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:31:53] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 13:32:53,987 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:32:53] "POST /api/v1/users/post HTTP/1.1" 400 -
+2021-07-15 13:33:08,922 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:33:08] "POST /api/v1/users/post HTTP/1.1" 500 -
+2021-07-15 13:44:43,726 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/director.py', reloading
+2021-07-15 13:44:43,879 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:44:45,901 - file - DEBUG - Debug FILE
+2021-07-15 13:44:46,054 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:44:46,605 - file - DEBUG - Debug FILE
+2021-07-15 13:44:46,616 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:44:46,645 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:45:29,449 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:45:29] "GET /api/v1/users/get HTTP/1.1" 200 -
+2021-07-15 13:45:48,185 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:45:48] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+2021-07-15 13:46:02,476 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:46:02] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+2021-07-15 13:46:30,942 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:46:30] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating&genre_film=fighting HTTP/1.1" 200 -
+2021-07-15 13:46:58,638 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:46:58] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating&Director=Jonathan%20Irwin&genre_film=fighting HTTP/1.1" 200 -
+2021-07-15 13:47:20,713 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:47:20] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating&Director=Jonathan%20Irwin&genre_film=fighting&search=Helena HTTP/1.1" 200 -
+2021-07-15 13:47:49,896 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:47:49] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating&Director=Jonathan%20Irwin&from=2000-01-16&to=2020-09-05&genre_film=fighting&search=Helena HTTP/1.1" 200 -
+2021-07-15 13:49:06,134 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 13:49:06,301 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 13:49:08,459 - file - DEBUG - Debug FILE
+2021-07-15 13:49:08,630 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 13:49:09,187 - file - DEBUG - Debug FILE
+2021-07-15 13:49:09,239 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 13:49:09,240 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 13:49:19,581 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:49:19] "GET / HTTP/1.1" 200 -
+2021-07-15 13:49:20,009 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:49:20] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 13:49:20,025 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:49:20] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 13:51:09,860 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:51:09] "POST /api/v1/films/post HTTP/1.1" 400 -
+2021-07-15 13:51:19,549 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 13:51:19] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 14:06:20,927 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-15 14:06:21,088 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:06:23,175 - file - DEBUG - Debug FILE
+2021-07-15 14:06:23,339 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:06:23,884 - file - DEBUG - Debug FILE
+2021-07-15 14:06:23,929 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:06:23,942 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:06:52,403 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:06:52] "GET / HTTP/1.1" 200 -
+2021-07-15 14:06:52,913 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:06:52] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 14:06:52,930 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:06:52] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 14:07:22,348 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:07:22] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+2021-07-15 14:07:40,866 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:07:40] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-15 14:08:24,617 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:08:24] "POST /api/v1/films/post HTTP/1.1" 201 -
+2021-07-15 14:08:57,846 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:08:57] "GET /api/v1/films/get/?start=1&limit=10&search=rer HTTP/1.1" 404 -
+2021-07-15 14:09:19,220 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:09:19] "GET /api/v1/films/get/?start=1&limit=10&search=tte HTTP/1.1" 200 -
+2021-07-15 14:11:40,766 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 14:11:40,920 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:11:42,941 - file - DEBUG - Debug FILE
+2021-07-15 14:11:43,093 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:11:43,652 - file - DEBUG - Debug FILE
+2021-07-15 14:11:43,690 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:11:43,691 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:11:53,230 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:11:53] "GET / HTTP/1.1" 200 -
+2021-07-15 14:11:53,721 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:11:53] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 14:11:53,732 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:11:53] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 14:11:59,842 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:11:59] "GET /api/v1/auth/logout HTTP/1.1" 200 -
+2021-07-15 14:12:05,724 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:12:05] "GET /api/v1/auth/logout HTTP/1.1" 500 -
+2021-07-15 14:15:15,243 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-15 14:15:15,415 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:15:17,482 - file - DEBUG - Debug FILE
+2021-07-15 14:15:17,672 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:15:18,210 - file - DEBUG - Debug FILE
+2021-07-15 14:15:18,259 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:15:18,263 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:15:23,163 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:15:23] "GET /api/v1/auth/logout HTTP/1.1" 500 -
+2021-07-15 14:16:29,741 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:16:29] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-15 14:16:58,417 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-15 14:16:58,593 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:17:00,847 - file - DEBUG - Debug FILE
+2021-07-15 14:17:01,008 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:17:01,621 - file - DEBUG - Debug FILE
+2021-07-15 14:17:01,634 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:17:01,652 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:17:15,016 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:17:15] "GET /api/v1/auth/logout HTTP/1.1" 200 -
+2021-07-15 14:17:17,470 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:17:17] "GET /api/v1/auth/logout HTTP/1.1" 500 -
+2021-07-15 14:17:56,890 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-15 14:17:57,037 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:17:59,253 - file - DEBUG - Debug FILE
+2021-07-15 14:17:59,455 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:18:00,140 - file - DEBUG - Debug FILE
+2021-07-15 14:18:00,199 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:18:00,200 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:18:03,901 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:18:03] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+2021-07-15 14:18:03,917 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:18:03] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+2021-07-15 14:18:42,109 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 14:18:42,258 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:18:44,761 - file - DEBUG - Debug FILE
+2021-07-15 14:18:44,943 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:18:45,599 - file - DEBUG - Debug FILE
+2021-07-15 14:18:45,648 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:18:45,650 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:18:45,675 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:18:45] "GET /api/v1/auth/logout HTTP/1.1" 405 -
+2021-07-15 14:18:59,588 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:18:59] "GET / HTTP/1.1" 200 -
+2021-07-15 14:19:00,032 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:19:00] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 14:19:00,040 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:19:00] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 14:19:08,440 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:19:08] "POST /api/v1/auth/logout HTTP/1.1" 302 -
+2021-07-15 14:19:08,455 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:19:08] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+2021-07-15 14:19:42,903 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 14:19:43,050 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:19:45,173 - file - DEBUG - Debug FILE
+2021-07-15 14:19:45,325 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:19:45,867 - file - DEBUG - Debug FILE
+2021-07-15 14:19:45,914 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:19:45,915 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:20:06,918 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:20:06] "POST /api/v1/auth/logout HTTP/1.1" 405 -
+2021-07-15 14:20:12,835 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:20:12] "GET / HTTP/1.1" 200 -
+2021-07-15 14:20:13,307 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:20:13] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 14:20:13,319 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:20:13] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 14:28:59,641 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 14:28:59,792 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:29:01,825 - file - DEBUG - Debug FILE
+2021-07-15 14:29:01,980 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:29:02,511 - file - DEBUG - Debug FILE
+2021-07-15 14:29:02,555 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:29:02,557 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:29:12,353 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:29:12] "GET / HTTP/1.1" 200 -
+2021-07-15 14:29:12,771 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:29:12] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-15 14:29:12,779 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:29:12] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-15 14:33:43,547 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 14:33:43,703 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:33:45,800 - file - DEBUG - Debug FILE
+2021-07-15 14:33:45,971 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:33:46,516 - file - DEBUG - Debug FILE
+2021-07-15 14:33:46,564 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:33:46,565 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:34:04,111 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:34:04] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+2021-07-15 14:34:04,130 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:34:04] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+2021-07-15 14:34:46,315 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:34:46] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-15 14:39:27,850 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 14:39:28,020 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:39:30,156 - file - DEBUG - Debug FILE
+2021-07-15 14:39:30,310 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:39:30,879 - file - DEBUG - Debug FILE
+2021-07-15 14:39:30,899 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:39:30,913 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 14:39:40,754 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:39:40] "POST /api/v1/films/post HTTP/1.1" 302 -
+2021-07-15 14:39:40,768 - werkzeug - INFO - 172.24.0.1 - - [15/Jul/2021 14:39:40] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Ffilms%2Fpost HTTP/1.1" 405 -
+2021-07-15 14:40:44,529 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-15 14:40:44,694 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:40:46,964 - file - DEBUG - Debug FILE
+2021-07-15 14:40:47,141 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:40:47,764 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:40:47,769 - file - DEBUG - Debug FILE
+2021-07-15 14:51:39,982 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 14:51:42,087 - file - DEBUG - Debug FILE
+2021-07-15 14:51:42,247 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 14:51:42,794 - file - DEBUG - Debug FILE
+2021-07-15 14:51:42,800 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 14:51:42,807 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 16:52:56,399 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 16:52:56,596 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 16:52:59,037 - file - DEBUG - Debug FILE
+2021-07-15 16:52:59,205 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 16:52:59,801 - file - DEBUG - Debug FILE
+2021-07-15 16:52:59,848 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 16:52:59,850 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 16:53:00,918 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/logining.py', reloading
+2021-07-15 16:53:01,081 - werkzeug - INFO -  * Restarting with stat
+2021-07-15 16:53:03,376 - file - DEBUG - Debug FILE
+2021-07-15 16:53:03,545 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-15 16:53:04,190 - werkzeug - WARNING -  * Debugger is active!
+2021-07-15 16:53:04,191 - werkzeug - INFO -  * Debugger PIN: 135-835-878
+2021-07-15 16:53:04,206 - file - DEBUG - Debug FILE
+2021-07-16 10:30:36,756 - file - DEBUG - Debug FILE
+2021-07-16 10:30:37,792 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:38,584 - file - DEBUG - Debug FILE
+2021-07-16 10:30:41,380 - file - DEBUG - Debug FILE
+2021-07-16 10:30:41,537 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:42,119 - file - DEBUG - Debug FILE
+2021-07-16 10:30:49,449 - file - DEBUG - Debug FILE
+2021-07-16 10:30:49,609 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:50,167 - file - DEBUG - Debug FILE
+2021-07-16 10:30:52,635 - file - DEBUG - Debug FILE
+2021-07-16 10:30:52,792 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:53,332 - file - DEBUG - Debug FILE
+2021-07-16 10:30:55,817 - file - DEBUG - Debug FILE
+2021-07-16 10:30:55,982 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:56,546 - file - DEBUG - Debug FILE
+2021-07-16 10:30:56,636 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 10:30:56,652 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 10:30:58,784 - file - DEBUG - Debug FILE
+2021-07-16 10:30:58,948 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 10:30:59,488 - file - DEBUG - Debug FILE
+2021-07-16 10:30:59,512 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 10:30:59,628 - werkzeug - INFO -  * Debugger PIN: 811-493-761
+2021-07-16 11:40:52,484 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:52] "GET / HTTP/1.1" 200 -
+2021-07-16 11:40:52,745 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:52] "GET /swaggerui/swagger-ui.css HTTP/1.1" 304 -
+2021-07-16 11:40:52,747 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:52] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 304 -
+2021-07-16 11:40:52,756 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:52] "GET /swaggerui/droid-sans.css HTTP/1.1" 304 -
+2021-07-16 11:40:52,758 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:52] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 304 -
+2021-07-16 11:40:53,232 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:53] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-16 11:40:53,279 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:40:53] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 304 -
+2021-07-16 11:41:07,283 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:41:07] "DELETE /api/v1/films/delete/10 HTTP/1.1" 201 -
+2021-07-16 11:41:30,925 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:41:30] "GET /api/v1/auth/logout HTTP/1.1" 200 -
+2021-07-16 11:41:44,514 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:41:44] "DELETE /api/v1/users/delete/10 HTTP/1.1" 500 -
+2021-07-16 11:42:19,182 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:42:19] "DELETE /api/v1/films/delete/10 HTTP/1.1" 302 -
+2021-07-16 11:42:19,209 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:42:19] "DELETE /api/v1/auth/login?next=%2Fapi%2Fv1%2Ffilms%2Fdelete%2F10 HTTP/1.1" 405 -
+2021-07-16 11:50:19,907 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:50:19] "DELETE /api/v1/users/delete/10 HTTP/1.1" 500 -
+2021-07-16 11:53:24,690 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:53:24] "PUT /api/v1/users/put/2 HTTP/1.1" 201 -
+2021-07-16 11:53:55,666 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:53:55] "DELETE /api/v1/users/delete/2 HTTP/1.1" 500 -
+2021-07-16 11:58:53,197 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/user.py', reloading
+2021-07-16 11:58:53,402 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 11:58:55,674 - file - DEBUG - Debug FILE
+2021-07-16 11:58:55,826 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 11:58:56,406 - file - DEBUG - Debug FILE
+2021-07-16 11:58:56,450 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 11:58:56,451 - werkzeug - INFO -  * Debugger PIN: 811-493-761
+2021-07-16 11:59:11,166 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 11:59:11] "DELETE /api/v1/users/delete/2 HTTP/1.1" 500 -
+2021-07-16 12:02:09,541 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/models.py', reloading
+2021-07-16 12:02:09,691 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 12:02:56,183 - file - DEBUG - Debug FILE
+2021-07-16 12:02:56,343 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:02:56,892 - file - DEBUG - Debug FILE
+2021-07-16 12:02:59,335 - file - DEBUG - Debug FILE
+2021-07-16 12:02:59,485 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:03:00,025 - file - DEBUG - Debug FILE
+2021-07-16 12:03:06,002 - file - DEBUG - Debug FILE
+2021-07-16 12:03:06,207 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:03:06,782 - file - DEBUG - Debug FILE
+2021-07-16 12:03:09,180 - file - DEBUG - Debug FILE
+2021-07-16 12:03:09,340 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:03:09,868 - file - DEBUG - Debug FILE
+2021-07-16 12:03:12,121 - file - DEBUG - Debug FILE
+2021-07-16 12:03:12,315 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:03:12,890 - file - DEBUG - Debug FILE
+2021-07-16 12:03:12,950 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 12:03:12,952 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 12:03:15,050 - file - DEBUG - Debug FILE
+2021-07-16 12:03:15,228 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:03:15,816 - file - DEBUG - Debug FILE
+2021-07-16 12:03:15,850 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 12:03:15,860 - werkzeug - INFO -  * Debugger PIN: 173-985-733
+2021-07-16 12:03:18,715 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:03:18] "DELETE /api/v1/users/delete/2 HTTP/1.1" 500 -
+2021-07-16 12:03:21,695 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:03:21] "GET / HTTP/1.1" 200 -
+2021-07-16 12:03:22,363 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:03:22] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-16 12:03:22,807 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:03:22] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-16 12:03:32,251 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:03:32] "DELETE /api/v1/users/delete/2 HTTP/1.1" 500 -
+2021-07-16 12:03:57,805 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/models.py', reloading
+2021-07-16 12:03:57,969 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 12:04:00,166 - file - DEBUG - Debug FILE
+2021-07-16 12:04:00,345 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:00,915 - file - DEBUG - Debug FILE
+2021-07-16 12:04:00,960 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 12:04:00,961 - werkzeug - INFO -  * Debugger PIN: 173-985-733
+2021-07-16 12:04:08,584 - file - DEBUG - Debug FILE
+2021-07-16 12:04:08,752 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:09,319 - file - DEBUG - Debug FILE
+2021-07-16 12:04:11,810 - file - DEBUG - Debug FILE
+2021-07-16 12:04:12,007 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:12,550 - file - DEBUG - Debug FILE
+2021-07-16 12:04:18,491 - file - DEBUG - Debug FILE
+2021-07-16 12:04:18,649 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:19,179 - file - DEBUG - Debug FILE
+2021-07-16 12:04:21,442 - file - DEBUG - Debug FILE
+2021-07-16 12:04:21,608 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:22,148 - file - DEBUG - Debug FILE
+2021-07-16 12:04:24,400 - file - DEBUG - Debug FILE
+2021-07-16 12:04:24,551 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:25,076 - file - DEBUG - Debug FILE
+2021-07-16 12:04:25,137 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-16 12:04:25,139 - werkzeug - INFO -  * Restarting with stat
+2021-07-16 12:04:27,190 - file - DEBUG - Debug FILE
+2021-07-16 12:04:27,354 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-16 12:04:27,940 - file - DEBUG - Debug FILE
+2021-07-16 12:04:27,992 - werkzeug - WARNING -  * Debugger is active!
+2021-07-16 12:04:27,994 - werkzeug - INFO -  * Debugger PIN: 468-209-690
+2021-07-16 12:04:29,022 - werkzeug - INFO - 172.23.0.1 - - [16/Jul/2021 12:04:29] "DELETE /api/v1/users/delete/2 HTTP/1.1" 201 -

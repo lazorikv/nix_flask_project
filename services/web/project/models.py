@@ -23,7 +23,7 @@ class FilmModel(db.Model):
     rating = db.Column(db.Integer, db.CheckConstraint("1 <= rating AND rating<= 10"),
                        nullable=False, )
     poster = db.Column(db.String(200), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id", ondelete="CASCADE",), nullable=True)
     genres = db.relationship("GenreModel", secondary='filmgenre')
 
     def __init__(

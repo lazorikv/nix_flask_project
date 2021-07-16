@@ -38,6 +38,10 @@ services:
       PGADMIN_DEFAULT_PASSWORD: "qwedvord123"
     networks:
       - app-tier
+  httpbin:
+    image: "kennethreitz/httpbin"
+    ports:
+      - "8000:80"
 
 networks:
     app-tier:
