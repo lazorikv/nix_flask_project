@@ -3,7 +3,7 @@
 from random import randint, uniform
 from flask.cli import FlaskGroup
 from services.web.project.app import app
-from project import models
+from services.web.project import models
 from faker import Factory
 
 
