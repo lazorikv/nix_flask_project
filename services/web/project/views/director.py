@@ -37,7 +37,7 @@ class GetDirector(Resource):
                 }
                 for director in directors
             ]
-            return {"genres": director_list}, 200
+            return {"directors": director_list}, 200
         return {"Error": "Directors not found"}, 404
 
 
@@ -85,7 +85,7 @@ class PutDirector(Resource):
 
     @staticmethod
     @api.expect(director_model)
-    def put(director_id):
+    def put(director_id: int) -> tuple:
         """Update data about director"""
 
         try:
@@ -102,7 +102,7 @@ class DeleteDirector(Resource):
     """Method DELETE"""
 
     @staticmethod
-    def delete(director_id) -> tuple:
+    def delete(director_id: int) -> tuple:
         """Removes a director by id"""
 
         director = Director.query.get(director_id)

@@ -23,7 +23,7 @@ class FilmModel(db.Model):
     rating = db.Column(db.Integer, db.CheckConstraint("1 <= rating AND rating<= 10"),
                        nullable=False, )
     poster = db.Column(db.String(200), nullable=False)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id"), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.user_id", ondelete="CASCADE",), nullable=True)
     genres = db.relationship("GenreModel", secondary='filmgenre')
 
     def __init__(
@@ -80,7 +80,8 @@ class GenreModel(db.Model):
         return f"Genre {self.genre_name}"
 
     @classmethod
-    def genre_in(cls, genre_name):
+    def genre_in(cls, genre_name: str):
+        """Returns the genre query"""
         return GenreModel.query.filter(GenreModel.genre_name == genre_name).first()
 
 
@@ -100,7 +101,8 @@ class Director(db.Model):
         return f"<Director {self.director_name}>"
 
     @classmethod
-    def director_in(cls, director_name):
+    def director_in(cls, director_name: str):
+        """Returns the genre query"""
         return Director.query.filter(Director.director_name == director_name).first()
 
 

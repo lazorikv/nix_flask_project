@@ -13,5 +13,4 @@ dist/
 build/
 *.egg-info/
 .idea/
-services/web/errors.log
-services/web/error.log
+

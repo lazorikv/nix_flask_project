@@ -4,11 +4,12 @@ from flask import request
 from flask_login import current_user, login_required
 from project.args import sorting
 from project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
+from project.paginate import get_paginated_list
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from sqlalchemy import String, func
 from sqlalchemy.dialects.postgresql import ARRAY
-from project.paginate import get_paginated_list
+
 
 api = Namespace("films", description="Films in library")
 
@@ -182,7 +183,7 @@ class PostGenre(Resource):
             return {"Error ": str(err)}, 400
 
     @staticmethod
-    def genre_post(list_genre):
+    def genre_post(list_genre: list):
         """Adding genres to the database"""
 
         count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
@@ -214,7 +215,7 @@ class PutGenre(Resource):
     @staticmethod
     @api.expect(film_model)
     @login_required
-    def put(film_id):
+    def put(film_id: int) -> tuple:
         """Update data about film"""
         try:
             film = FilmModel.query.get(film_id)
@@ -239,7 +240,7 @@ class DeleteGenre(Resource):
 
     @staticmethod
     @login_required
-    def delete(film_id) -> tuple:
+    def delete(film_id: int) -> tuple:
         """Removes a film by id"""
         film = FilmModel.query.filter(FilmModel.film_id == film_id).first()
         if film.user_id == current_user.user_id or current_user.is_admin is True:

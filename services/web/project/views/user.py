@@ -6,7 +6,7 @@ from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
 
-api = Namespace("users", description="User Registration")
+api = Namespace("users", description="User HTTP methods")
 
 user_model = api.model(
     "User",
@@ -93,7 +93,7 @@ class PutUser(Resource):
 
     @staticmethod
     @api.expect(user_model)
-    def put(user_id):
+    def put(user_id: int) -> tuple:
         """Update data about user"""
 
         try:
@@ -112,10 +112,10 @@ class DeleteUser(Resource):
     """Method DELETE"""
 
     @staticmethod
-    def delete(user_id) -> tuple:
+    def delete(user_id: int) -> tuple:
         """Removes a user by his id"""
 
-        user = models.UserModel.query.get(user_id)
+        user = models.UserModel.query.filter(models.UserModel.user_id == user_id).first()
         models.db.session.delete(user)
         models.db.session.commit()
         return {"message": "data deleted successfully"}, 201
