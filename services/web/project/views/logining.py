@@ -1,7 +1,7 @@
 """Module for authorization user in system """
 
 from flask import request
-from project.models import db, UserModel
+from services.web.project.models import db, UserModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from werkzeug.security import generate_password_hash, check_password_hash

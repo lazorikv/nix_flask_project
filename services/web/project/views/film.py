@@ -2,9 +2,9 @@
 
 from flask import request
 from flask_login import current_user, login_required
-from project.args import sorting
-from project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
-from project.paginate import get_paginated_list
+from services.web.project.args import sorting
+from services.web.project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
+from services.web.project.paginate import get_paginated_list
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from sqlalchemy import String, func

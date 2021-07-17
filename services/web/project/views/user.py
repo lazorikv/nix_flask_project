@@ -1,7 +1,7 @@
 """User methods CRUD"""
 
 from flask import request
-from project import models
+from services.web.project import models
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 

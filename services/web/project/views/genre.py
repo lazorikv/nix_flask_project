@@ -1,7 +1,7 @@
 """Genre methods CRUD"""
 
 from flask import request
-from project.models import db, GenreModel
+from services.web.project.models import db, GenreModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
