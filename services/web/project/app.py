@@ -33,7 +33,7 @@ app.secret_key = "MY_SECRET_KEY"
 # init logging
 
 logging.basicConfig(filename='error.log', level=logging.DEBUG)
-logging.config.dictConfig(yaml.load(open('services.logging.conf')))
+# logging.config.dictConfig(yaml.load(open('services.logging.conf')))
 logfile = logging.getLogger('file')
 logconsole = logging.getLogger('console')
 logfile.debug("Debug FILE")
