@@ -1,0 +1,7 @@
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 165-289-899
