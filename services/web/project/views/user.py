@@ -1,12 +1,12 @@
 """User methods CRUD"""
 
 from flask import request
-from project import models
+from services.web.project import models
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
 
-api = Namespace("users", description="User HTTP methods")
+api = Namespace("users", description="User CRUD methods")
 
 user_model = api.model(
     "User",
@@ -39,7 +39,7 @@ class GetUser(Resource):
                 }
                 for user in users
             ]
-            return {"users": user_list}, 200
+            return {"Users": user_list}, 200
         return {"Error": "Users was not found"}, 404
 
 
@@ -82,7 +82,7 @@ class PostUser(Resource):
             )
             models.db.session.add(user)
             models.db.session.commit()
-            return {"message": "User added to database"}, 201
+            return {"Message": "User added to database"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -102,7 +102,7 @@ class PutUser(Resource):
             user.password = request.json["password"]
             user.is_admin = request.json["is_admin"]
             models.db.session.commit()
-            return {"message": "Data updated"}, 201
+            return {"Message": "Data updated"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -116,6 +116,8 @@ class DeleteUser(Resource):
         """Removes a user by his id"""
 
         user = models.UserModel.query.filter(models.UserModel.user_id == user_id).first()
-        models.db.session.delete(user)
-        models.db.session.commit()
-        return {"message": "data deleted successfully"}, 201
+        if user:
+            models.db.session.delete(user)
+            models.db.session.commit()
+            return {"Message": "Data deleted successfully"}, 201
+        return {"Error": "User was not found"}, 404

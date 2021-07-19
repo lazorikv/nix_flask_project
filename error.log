@@ -1,0 +1,892 @@
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 508-364-597
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:08:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:08:11] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:08:11] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:08:20] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/manage.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 834-800-637
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:20:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:20:57] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:20:57] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:21:10] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:21:15] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:54] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:55] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:55] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:55] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:55] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:23:55] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 153-862-016
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:31:10] "POST /api/v1/auth/login HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:32:02] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:34:39] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:34:39] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:34:39] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:34:39] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:34:39] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:35:09] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 500 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:36:34] "POST /api/v1/auth/login HTTP/1.1" 500 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:37:35] "POST /api/v1/auth/login HTTP/1.1" 500 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:38:01] "GET /api/v1/auth/logout HTTP/1.1" 500 -
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 200-168-478
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:38:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:38:42] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:38:42] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 07:38:49] "GET /api/v1/auth/logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:27] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:27] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:27] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:27] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:27] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:39:28] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/views/film.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 200-168-478
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-231-766
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:53] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:54] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:54] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:54] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:54] "POST /api/v1/auth/login HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:53:54] "GET /api/v1/auth/logout HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 140-231-766
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:38] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "POST /api/v1/auth/signup HTTP/1.1" 401 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 07:59:39] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:04:50] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:05:21] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 500 -
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 149-925-760
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/auth/logout HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:32:29] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Fauth%2Flogout HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:27] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:28] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:28] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:28] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:28] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:28] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:38:58] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:39:57] "GET /api/v1/films/get/1 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:40:26] "GET /api/v1/films/get/1 HTTP/1.1" 500 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 08:40:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 08:40:44] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 08:40:44] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 201-982-594
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:46] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:47] "POST /api/v1/users/post HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:47] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:47] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:47] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:48] "GET /api/v1/films/get/?start=1&limit=10&genre_film=fighting HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:48] "GET /api/v1/films/get/?start=1&limit=10&from=1999-01-01&to=2015-01-01 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:48] "GET /api/v1/films/get/?start=1&limit=10&Director=Bradley%20Raymond HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:48] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Rating HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2021 08:41:48] "POST /api/v1/auth/signup HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/views/director.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+WARNING:werkzeug: * Debugger is active!
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 201-982-594
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 429-222-762
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/views/film.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 429-222-762
+INFO:werkzeug: * Detected change in '/usr/src/app/services/web/project/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+WARNING:werkzeug: * Debugger is active!
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Debugger PIN: 429-222-762
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 09:18:53] "POST /api/v1/auth/login HTTP/1.1" 202 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 09:19:02] "DELETE /api/v1/films/delete/6 HTTP/1.1" 201 -
+INFO:werkzeug:192.168.192.1 - - [19/Jul/2021 09:23:41] "PUT /api/v1/films/put/5 HTTP/1.1" 201 -
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 215-859-500
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /swaggerui/droid-sans.css HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /swaggerui/swagger-ui.css HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:27] "GET /swaggerui/favicon-32x32.png HTTP/1.0" 200 -
+INFO:werkzeug:192.168.208.4 - - [19/Jul/2021 10:38:37] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.0" 200 -

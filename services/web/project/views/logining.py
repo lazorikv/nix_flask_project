@@ -1,7 +1,7 @@
 """Module for authorization user in system """
 
 from flask import request
-from project.models import db, UserModel
+from services.web.project.models import db, UserModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -47,7 +47,7 @@ class SignUp(Resource):
                 user = UserModel.query.filter_by(username=username).first()
 
                 if user:
-                    return {"error": "Username already exists."}, 401
+                    return {"Error": "Username already exists."}, 401
                 new_user = UserModel(
                     username=username,
                     password=generate_password_hash(password, method="sha256"),
@@ -58,9 +58,9 @@ class SignUp(Resource):
                 db.session.commit()
 
                 return {
-                    "message": f"User {new_user.username} has been created successfully"
+                    "Message": f"User {new_user.username} has been created successfully"
                 }, 200
-            return {"error": "The request payload is not in JSON format"}, 400
+            return {"Error": "The request payload is not in JSON format"}, 400
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -103,6 +103,6 @@ class Logout(Resource):
         """Logout user from system"""
         try:
             logout_user()
-            return {"message": "User is logout"}
-        except:
-            return {"message": "User is not logged in"}, 404
+            return {"Message": "User is logout"}
+        except AttributeError:
+            return {"Message": "User is not logged in"}, 404

@@ -84,6 +84,31 @@ class GenreModel(db.Model):
         """Returns the genre query"""
         return GenreModel.query.filter(GenreModel.genre_name == genre_name).first()
 
+    @classmethod
+    def genre_post(cls, list_genre: list):
+        """Adding genres to the database"""
+
+        count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
+        for genre in list_genre:
+            sm_genre = GenreModel.genre_in(genre)
+            if sm_genre:
+                filmgenre = FilmGenre(
+                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
+                )
+                db.session.add(filmgenre)
+                db.session.commit()
+            else:
+                genre_add = GenreModel(genre_name=genre)
+                db.session.add(genre_add)
+                db.session.commit()
+
+                sm_genre = GenreModel.genre_in(genre)
+                filmgenre = FilmGenre(
+                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
+                )
+                db.session.add(filmgenre)
+                db.session.commit()
+
 
 class Director(db.Model):
     """Model of director essence"""

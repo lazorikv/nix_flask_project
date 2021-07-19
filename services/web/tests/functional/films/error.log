@@ -1,0 +1,718 @@
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+ERROR:services.web.project.app:Exception on /api/v1/films/get/ [GET]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 121, in get
+    result = [
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2838, in __iter__
+    return self._iter().__iter__()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+ERROR:services.web.project.app:Exception on /api/v1/films/get/ [GET]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 121, in get
+    result = [
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2838, in __iter__
+    return self._iter().__iter__()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+ERROR:services.web.project.app:Exception on /api/v1/films/get/ [GET]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 121, in get
+    result = [
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2838, in __iter__
+    return self._iter().__iter__()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+ERROR:services.web.project.app:Exception on /api/v1/films/post [POST]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 160, in post
+    sm_director = Director.director_in(director_in)
+  File "/home/vladyslav/flask_project/services/web/project/models.py", line 131, in director_in
+    return Director.query.filter(Director.director_name == director_name).first()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2761, in first
+    return self.limit(1)._iter().first()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+ERROR:services.web.project.app:Exception on /api/v1/films/get/ [GET]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 121, in get
+    result = [
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2838, in __iter__
+    return self._iter().__iter__()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+ERROR:services.web.project.app:Exception on /api/v1/films/post [POST]
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/vladyslav/flask_project/services/web/project/views/film.py", line 160, in post
+    sm_director = Director.director_in(director_in)
+  File "/home/vladyslav/flask_project/services/web/project/models.py", line 131, in director_in
+    return Director.query.filter(Director.director_name == director_name).first()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2761, in first
+    return self.limit(1)._iter().first()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    result = self.session.execute(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1688, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1529, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3166, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3245, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3215, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2069, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 3212, in _wrap_pool_connect
+    return fn()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 307, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 767, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 425, in checkout
+    rec = pool._do_get()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 146, in _do_get
+    self._dec_overflow()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 253, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 368, in __init__
+    self.__connect()
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 611, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 605, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 584, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/vladyslav/.local/share/virtualenvs/flask_project-bkGNUrgv/lib/python3.9/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)

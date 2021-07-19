@@ -1501,3 +1501,373 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  database "f
 2021-07-17 12:46:14,197 - werkzeug - INFO - 192.168.80.4 - - [17/Jul/2021 12:46:14] "GET / HTTP/1.0" 200 -
 2021-07-17 12:46:14,676 - werkzeug - INFO - 192.168.80.4 - - [17/Jul/2021 12:46:14] "GET /api/v1/swagger.json HTTP/1.0" 200 -
 2021-07-17 12:46:21,501 - werkzeug - INFO - 192.168.80.4 - - [17/Jul/2021 12:46:21] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.0" 200 -
+2021-07-17 18:40:48,268 - file - DEBUG - Debug FILE
+2021-07-17 18:40:48,483 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:40:49,068 - file - DEBUG - Debug FILE
+2021-07-17 18:40:51,494 - file - DEBUG - Debug FILE
+2021-07-17 18:40:51,654 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:40:52,186 - file - DEBUG - Debug FILE
+2021-07-17 18:40:58,104 - file - DEBUG - Debug FILE
+2021-07-17 18:40:58,262 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:40:58,832 - file - DEBUG - Debug FILE
+2021-07-17 18:41:01,246 - file - DEBUG - Debug FILE
+2021-07-17 18:41:01,467 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:41:02,030 - file - DEBUG - Debug FILE
+2021-07-17 18:41:04,567 - file - DEBUG - Debug FILE
+2021-07-17 18:41:04,735 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:41:05,320 - file - DEBUG - Debug FILE
+2021-07-17 18:41:05,392 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-17 18:41:05,394 - werkzeug - INFO -  * Restarting with stat
+2021-07-17 18:41:07,479 - file - DEBUG - Debug FILE
+2021-07-17 18:41:07,645 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-17 18:41:08,187 - file - DEBUG - Debug FILE
+2021-07-17 18:41:08,236 - werkzeug - WARNING -  * Debugger is active!
+2021-07-17 18:41:08,237 - werkzeug - INFO -  * Debugger PIN: 201-230-360
+2021-07-17 18:41:34,730 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:41:34] "GET / HTTP/1.1" 200 -
+2021-07-17 18:41:35,091 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:41:35] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-17 18:41:35,182 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:41:35] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-17 18:41:42,535 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:41:42] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+2021-07-17 18:42:48,150 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:42:48] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+2021-07-17 18:42:57,157 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:42:57] "GET /api/v1/films/get/10 HTTP/1.1" 200 -
+2021-07-17 18:46:49,787 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:46:49] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+2021-07-17 18:47:01,451 - werkzeug - INFO - 192.168.128.1 - - [17/Jul/2021 18:47:01] "GET /api/v1/films/get/10 HTTP/1.1" 200 -
+2021-07-18 07:29:28,371 - file - DEBUG - Debug FILE
+2021-07-18 07:29:28,537 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:29,103 - file - DEBUG - Debug FILE
+2021-07-18 07:29:31,574 - file - DEBUG - Debug FILE
+2021-07-18 07:29:31,736 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:32,336 - file - DEBUG - Debug FILE
+2021-07-18 07:29:39,098 - file - DEBUG - Debug FILE
+2021-07-18 07:29:39,261 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:39,859 - file - DEBUG - Debug FILE
+2021-07-18 07:29:42,406 - file - DEBUG - Debug FILE
+2021-07-18 07:29:42,583 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:43,178 - file - DEBUG - Debug FILE
+2021-07-18 07:29:45,681 - file - DEBUG - Debug FILE
+2021-07-18 07:29:45,859 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:46,514 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-18 07:29:46,515 - file - DEBUG - Debug FILE
+2021-07-18 07:29:48,883 - file - DEBUG - Debug FILE
+2021-07-18 07:29:49,061 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 07:29:49,657 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 07:29:49,675 - file - DEBUG - Debug FILE
+2021-07-18 08:07:41,905 - file - DEBUG - Debug FILE
+2021-07-18 08:07:42,201 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:07:42,777 - file - DEBUG - Debug FILE
+2021-07-18 08:07:42,819 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 08:07:42,832 - werkzeug - INFO -  * Debugger PIN: 336-209-907
+2021-07-18 08:07:51,279 - file - DEBUG - Debug FILE
+2021-07-18 08:07:51,436 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:07:51,961 - file - DEBUG - Debug FILE
+2021-07-18 08:07:54,366 - file - DEBUG - Debug FILE
+2021-07-18 08:07:54,525 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:07:55,074 - file - DEBUG - Debug FILE
+2021-07-18 08:08:01,155 - file - DEBUG - Debug FILE
+2021-07-18 08:08:01,341 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:08:01,881 - file - DEBUG - Debug FILE
+2021-07-18 08:08:04,336 - file - DEBUG - Debug FILE
+2021-07-18 08:08:04,486 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:08:05,067 - file - DEBUG - Debug FILE
+2021-07-18 08:08:07,743 - file - DEBUG - Debug FILE
+2021-07-18 08:08:07,923 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:08:08,568 - file - DEBUG - Debug FILE
+2021-07-18 08:08:08,620 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-18 08:08:08,622 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 08:08:10,943 - file - DEBUG - Debug FILE
+2021-07-18 08:08:11,120 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 08:08:11,713 - file - DEBUG - Debug FILE
+2021-07-18 08:08:11,751 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 08:08:11,762 - werkzeug - INFO -  * Debugger PIN: 295-636-713
+2021-07-18 08:08:11,827 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:08:11] "GET / HTTP/1.1" 200 -
+2021-07-18 08:08:12,458 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:08:12] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+2021-07-18 08:08:12,491 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:08:12] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+2021-07-18 08:08:19,156 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:08:19] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:08:58,425 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:08:58] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:10:31,271 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:10:31] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:15:41,990 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:15:41] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:26:56,791 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:26:56] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:29:31,644 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:29:31] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:29:43,181 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:29:43] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:30:22,382 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:30:22] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:30:22,417 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:30:22] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:44:04,749 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:44:04] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:48:20,895 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:48:20] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:48:20,968 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:48:20] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:48:20,984 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:48:20] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:50:33,323 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:50:33] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:50:33,393 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:50:33] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:50:33,408 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:50:33] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:52:01,006 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:52:01] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+2021-07-18 08:52:13,735 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:52:13] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 08:53:42,932 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:53:42] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:53:42,969 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:53:42] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:53:42,983 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:53:42] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:53:42,999 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:53:42] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 08:56:56,808 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:56:56] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:56:56,880 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:56:56] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:56:56,894 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:56:56] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:56:56,911 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:56:56] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 08:59:48,447 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:59:48] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 08:59:48,530 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:59:48] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 08:59:48,544 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:59:48] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 08:59:48,561 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 08:59:48] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:00:39,880 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:00:39] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:01:00,717 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:01:00] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:02:15,157 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:02:15] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:02:15,197 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:02:15] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:02:15,211 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:02:15] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:02:15,231 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:02:15] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:02:41,884 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:02:41] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+2021-07-18 09:03:21,726 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:21] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:03:21,757 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:21] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:03:21,772 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:21] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:03:21,790 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:21] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:03:21,822 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:21] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.1" 200 -
+2021-07-18 09:03:36,226 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:36] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:03:56,747 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:56] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:03:56,847 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:56] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:03:56,863 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:56] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:03:56,879 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:56] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:03:56,949 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:03:56] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:04:44,004 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:04:44] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:04:44,021 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:04:44] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:04:44,035 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:04:44] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:04:44,052 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:04:44] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:04:44,089 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:04:44] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:07:31,301 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:07:31] "POST /api/v1/films/post HTTP/1.1" 302 -
+2021-07-18 09:07:31,314 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:07:31] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Ffilms%2Fpost HTTP/1.1" 405 -
+2021-07-18 09:08:11,797 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:08:11] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 09:08:32,252 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:08:32] "POST /api/v1/films/post HTTP/1.1" 201 -
+2021-07-18 09:10:51,337 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:10:51,353 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:10:51,367 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:10:51,386 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:10:51,425 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:10:51,437 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "POST /api/v1/films/post HTTP/1.1" 302 -
+2021-07-18 09:10:51,448 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:10:51] "GET /api/v1/auth/login?next=%2Fapi%2Fv1%2Ffilms%2Fpost HTTP/1.1" 405 -
+2021-07-18 09:23:39,839 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-18 09:23:39,976 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 09:23:42,253 - file - DEBUG - Debug FILE
+2021-07-18 09:23:42,517 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:23:43,068 - file - DEBUG - Debug FILE
+2021-07-18 09:23:43,108 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 09:23:43,109 - werkzeug - INFO -  * Debugger PIN: 295-636-713
+2021-07-18 09:23:43,228 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:23:43,275 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:23:43,290 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:23:43,312 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:23:43,351 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:23:43,439 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:23:43] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:26:02,476 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:26:02,541 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:26:02,555 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:26:02,574 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:26:02,616 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:26:02,653 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:26:02] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:27:26,277 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:27:26,337 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:27:26,353 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:27:26,372 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:27:26,406 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:27:26,449 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:27:26] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:30:06,821 - file - DEBUG - Debug FILE
+2021-07-18 09:30:06,982 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:07,525 - file - DEBUG - Debug FILE
+2021-07-18 09:30:09,994 - file - DEBUG - Debug FILE
+2021-07-18 09:30:10,153 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:10,708 - file - DEBUG - Debug FILE
+2021-07-18 09:30:16,262 - file - DEBUG - Debug FILE
+2021-07-18 09:30:16,437 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:16,997 - file - DEBUG - Debug FILE
+2021-07-18 09:30:19,417 - file - DEBUG - Debug FILE
+2021-07-18 09:30:19,580 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:20,128 - file - DEBUG - Debug FILE
+2021-07-18 09:30:22,401 - file - DEBUG - Debug FILE
+2021-07-18 09:30:22,559 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:23,105 - file - DEBUG - Debug FILE
+2021-07-18 09:30:23,160 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-18 09:30:23,162 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 09:30:25,169 - file - DEBUG - Debug FILE
+2021-07-18 09:30:25,334 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:30:25,870 - file - DEBUG - Debug FILE
+2021-07-18 09:30:25,907 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 09:30:25,909 - werkzeug - INFO -  * Debugger PIN: 465-120-565
+2021-07-18 09:30:33,818 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:33] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+2021-07-18 09:30:33,947 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:33] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:30:33,962 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:33] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:30:33,989 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:33] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:30:34,030 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:34] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:30:34,082 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:30:34] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:32:07,458 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+2021-07-18 09:32:07,594 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:32:07,615 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:32:07,649 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:32:07,701 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:32:07,743 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:32:07] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:36:41,400 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "GET /api/v1/films/get/1 HTTP/1.1" 404 -
+2021-07-18 09:36:41,533 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:36:41,546 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:36:41,563 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:36:41,596 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:36:41,639 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:41] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:36:59,333 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:36:59] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:38:27,843 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/views/film.py', reloading
+2021-07-18 09:38:28,009 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 09:38:30,028 - file - DEBUG - Debug FILE
+2021-07-18 09:38:30,197 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:30,740 - file - DEBUG - Debug FILE
+2021-07-18 09:38:30,779 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 09:38:30,779 - werkzeug - INFO -  * Debugger PIN: 465-120-565
+2021-07-18 09:38:41,293 - file - DEBUG - Debug FILE
+2021-07-18 09:38:41,445 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:41,988 - file - DEBUG - Debug FILE
+2021-07-18 09:38:44,348 - file - DEBUG - Debug FILE
+2021-07-18 09:38:44,496 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:45,029 - file - DEBUG - Debug FILE
+2021-07-18 09:38:50,501 - file - DEBUG - Debug FILE
+2021-07-18 09:38:50,661 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:51,223 - file - DEBUG - Debug FILE
+2021-07-18 09:38:53,683 - file - DEBUG - Debug FILE
+2021-07-18 09:38:53,832 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:54,388 - file - DEBUG - Debug FILE
+2021-07-18 09:38:56,690 - file - DEBUG - Debug FILE
+2021-07-18 09:38:56,846 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:38:57,398 - file - DEBUG - Debug FILE
+2021-07-18 09:38:57,446 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-18 09:38:57,447 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 09:38:59,452 - file - DEBUG - Debug FILE
+2021-07-18 09:38:59,600 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 09:39:00,145 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 09:39:00,145 - file - DEBUG - Debug FILE
+2021-07-18 09:39:00,157 - werkzeug - INFO -  * Debugger PIN: 156-323-885
+2021-07-18 09:39:38,032 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:38] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:39:58,629 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:39:58,753 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:39:58,766 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:39:58,788 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:39:58,821 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:39:58,866 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:39:58] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:41:58,737 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:41:58] "POST /api/v1/films/post HTTP/1.1" 201 -
+2021-07-18 09:42:06,012 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:42:06] "GET /api/v1/auth/logout HTTP/1.1" 200 -
+2021-07-18 09:42:11,091 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:42:11] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:50:11,351 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:11] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:50:11,476 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:11] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:50:11,494 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:11] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:50:11,514 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:11] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:50:11,548 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:11] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:50:36,637 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:36] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:50:36,761 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:36] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:50:36,775 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:36] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:50:36,796 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:36] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:50:36,829 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:50:36] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:51:07,592 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:07] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:51:07,887 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:07] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:51:07,903 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:07] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:51:07,924 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:07] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:51:07,961 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:07] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:51:46,875 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:46] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:51:47,031 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:51:47,046 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:51:47,064 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:51:47,145 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:51:47,154 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "POST /api/v1/auth/login HTTP/1.1" 401 -
+2021-07-18 09:51:47,187 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:51:47] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:52:43,644 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:52:43,743 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:52:43,759 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:52:43,782 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:52:43,816 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:52:43,829 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "POST /api/v1/auth/login HTTP/1.1" 401 -
+2021-07-18 09:52:43,867 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:52:43] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:53:39,454 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:53:39,605 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:53:39,623 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:53:39,645 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:53:39,685 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 09:53:39,697 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "POST /api/v1/auth/login HTTP/1.1" 401 -
+2021-07-18 09:53:39,737 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:53:39] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 09:56:18,198 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:56:18] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 09:56:18,364 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:56:18] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 09:56:18,380 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:56:18] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 09:56:18,402 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:56:18] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 09:56:18,438 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 09:56:18] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:00:56,446 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:00:56] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 10:00:56,589 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:00:56] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 10:00:56,618 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:00:56] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 10:00:56,636 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:00:56] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 10:00:56,675 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:00:56] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:02:07,238 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:07] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 10:02:07,392 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:07] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 10:02:07,406 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:07] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 10:02:07,425 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:07] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 10:02:07,457 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:07] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:02:39,853 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:02:39] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 10:03:08,683 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 10:03:08,828 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 10:03:08,845 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 10:03:08,864 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 10:03:08,896 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:03:08,934 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:03:08] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 10:09:27,199 - werkzeug - INFO -  * Detected change in '/usr/src/app/project/app.py', reloading
+2021-07-18 10:09:27,364 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 10:09:29,384 - file - DEBUG - Debug FILE
+2021-07-18 10:09:29,542 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:09:30,076 - file - DEBUG - Debug FILE
+2021-07-18 10:09:30,114 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 10:09:30,115 - werkzeug - INFO -  * Debugger PIN: 156-323-885
+2021-07-18 10:09:45,263 - file - DEBUG - Debug FILE
+2021-07-18 10:09:45,420 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:09:45,960 - file - DEBUG - Debug FILE
+2021-07-18 10:09:48,403 - file - DEBUG - Debug FILE
+2021-07-18 10:09:48,560 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:09:49,097 - file - DEBUG - Debug FILE
+2021-07-18 10:09:54,953 - file - DEBUG - Debug FILE
+2021-07-18 10:09:55,118 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:09:55,726 - file - DEBUG - Debug FILE
+2021-07-18 10:09:58,225 - file - DEBUG - Debug FILE
+2021-07-18 10:09:58,409 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:09:58,991 - file - DEBUG - Debug FILE
+2021-07-18 10:10:01,394 - file - DEBUG - Debug FILE
+2021-07-18 10:10:01,558 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:10:02,102 - file - DEBUG - Debug FILE
+2021-07-18 10:10:02,150 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-18 10:10:02,152 - werkzeug - INFO -  * Restarting with stat
+2021-07-18 10:10:04,249 - file - DEBUG - Debug FILE
+2021-07-18 10:10:04,406 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-18 10:10:04,979 - file - DEBUG - Debug FILE
+2021-07-18 10:10:05,028 - werkzeug - WARNING -  * Debugger is active!
+2021-07-18 10:10:05,029 - werkzeug - INFO -  * Debugger PIN: 296-807-883
+2021-07-18 10:10:12,792 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:10:12] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 10:10:13,167 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:10:13] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 10:10:13,185 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:10:13] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 10:10:13,212 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:10:13] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 10:10:13,250 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:10:13] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:13:19,317 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 10:13:19,426 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 10:13:19,441 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 10:13:19,462 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 10:13:19,498 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 10:13:19,544 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 10:13:19] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 11:19:14,127 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:19:14] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 11:20:28,034 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 11:20:28,221 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 11:20:28,234 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 11:20:28,254 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 11:20:28,286 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 11:20:28,300 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 11:20:28,337 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:20:28] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 11:21:44,721 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 11:21:44,841 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 11:21:44,860 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 11:21:44,880 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 11:21:44,912 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 11:21:44,927 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:21:44] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 11:25:29,769 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "GET /api/v1/films/get/1 HTTP/1.1" 200 -
+2021-07-18 11:25:29,885 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "POST /api/v1/users/post HTTP/1.1" 201 -
+2021-07-18 11:25:29,902 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "GET /api/v1/films/get/1500 HTTP/1.1" 404 -
+2021-07-18 11:25:29,921 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "GET /api/v1/films/get/?start=1&limit=10&search=Lesotho HTTP/1.1" 200 -
+2021-07-18 11:25:29,952 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "GET /api/v1/films/get/?start=1&limit=17 HTTP/1.1" 200 -
+2021-07-18 11:25:29,968 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:29] "POST /api/v1/auth/login HTTP/1.1" 202 -
+2021-07-18 11:25:30,009 - werkzeug - INFO - 192.168.144.1 - - [18/Jul/2021 11:25:30] "POST /api/v1/films/post HTTP/1.1" 500 -
+2021-07-18 11:32:53,735 - werkzeug - INFO -  * Detected change in '/usr/src/app/manage.py', reloading
+2021-07-18 11:32:53,909 - werkzeug - INFO -  * Restarting with stat

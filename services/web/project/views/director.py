@@ -1,7 +1,7 @@
 """Director methods CRUD"""
 
 from flask import request
-from project.models import db, Director
+from services.web.project.models import db, Director
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
@@ -54,7 +54,6 @@ class GetOneDirector(Resource):
         director = db.session.query(Director).filter_by(director_id=director_id).first()
         if director:
             return {
-                "Director": director.director_id,
                 "director_id": director.director_id,
                 "director_name": director.director_name,
             }, 200
@@ -71,10 +70,13 @@ class PostDirector(Resource):
         """Post data about director to db"""
 
         try:
-            director = Director(director_name=request.json["director_name"])
+            data = request.json["director_name"]
+            if Director.director_in(data):
+                return {"Error": "Director is already exist"}, 409
+            director = Director(director_name=data)
             db.session.add(director)
             db.session.commit()
-            return {"message": "Director added to database"}, 201
+            return {"Message": "Director added to database"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -92,7 +94,7 @@ class PutDirector(Resource):
             director = Director.query.get(director_id)
             director.director_name = request.json["director_name"]
             db.session.commit()
-            return {"message": "data updated"}, 201
+            return {"Message": "data updated"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -109,5 +111,5 @@ class DeleteDirector(Resource):
         if director:
             db.session.delete(director)
             db.session.commit()
-            return {"message": "data deleted successfully"}, 201
+            return {"Message": "data deleted successfully"}, 201
         return {"Error": "Director not found"}, 404

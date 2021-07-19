@@ -2,32 +2,34 @@
 
 import logging.config
 import yaml
-from flask import Flask, url_for, Blueprint
+from flask import Flask
 from flask_login import LoginManager
 from flask_migrate import Migrate
 from flask_restplus import Api
-from project import models
-from project.views.director import api as director_namespace
-from project.views.film import api as film_namespace
-from project.views.genre import api as genre_namespace
-from project.views.user import api as user_namespace
-from project.views.logining import api as auth_namespace
-from werkzeug.contrib.fixers import ProxyFix
-# from flask_cors import CORS
+from services.web.project import models
+from services.web.project.views.director import api as director_namespace
+from services.web.project.views.film import api as film_namespace
+from services.web.project.views.genre import api as genre_namespace
+from services.web.project.views.user import api as user_namespace
+from services.web.project.views.logining import api as auth_namespace
+
 
 #  init app
-app = Flask(__name__)
-# app.wsgi_app = ProxyFix(app.wsgi_app)
-# CORS(app)
-app.secret_key = "MY_SECRET_KEY"
-app.config.from_object("project.config.Config")
+def create_app():
+    """Create application"""
+    m_app = Flask(__name__)
+    m_app.config.from_object("services.web.project.config.Config")
+    return m_app
 
+
+app = create_app()
+app.secret_key = "MY_SECRET_KEY"
 
 # init logging
-logging.basicConfig(filename='error.log', level=logging.DEBUG)
-logging.config.dictConfig(yaml.load(open('logging.conf')))
-logfile = logging.getLogger('file')
-logconsole = logging.getLogger('console')
+logging.basicConfig(filename="error.log", level=logging.DEBUG)
+logging.config.dictConfig(yaml.load(open("services/web/logging.conf")))
+logfile = logging.getLogger("file")
+logconsole = logging.getLogger("console")
 logfile.debug("Debug FILE")
 logconsole.debug("Debug CONSOLE")
 
@@ -58,7 +60,6 @@ login_manager.login_view = "auth_login"
 @login_manager.user_loader
 def load_user(user_id):
     """Reloading the user object from the user ID stored in the session"""
-
     return models.UserModel.query.get(int(user_id))
 
 

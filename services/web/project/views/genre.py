@@ -1,7 +1,7 @@
 """Genre methods CRUD"""
 
 from flask import request
-from project.models import db, GenreModel
+from services.web.project.models import db, GenreModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
@@ -36,7 +36,7 @@ class GetGenre(Resource):
                 }
                 for genre in genres
             ]
-            return {"genres": genre_list}, 200
+            return {"Genres": genre_list}, 200
         return {"Error": "Genres not found"}, 404
 
 
@@ -70,10 +70,13 @@ class PostGenre(Resource):
         """Post data about genre to db"""
 
         try:
-            genre = GenreModel(genre_name=request.json["genre_name"])
+            data = request.json["genre_name"]
+            if GenreModel.genre_in(data):
+                return {"Error": "Genre is already exist"}, 409
+            genre = GenreModel(genre_name=data)
             db.session.add(genre)
             db.session.commit()
-            return {"message": "Genre added to database"}, 201
+            return {"Message": "Genre added to database"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -90,7 +93,7 @@ class PutGenre(Resource):
             genre = GenreModel.query.get(genre_id)
             genre.genre_name = request.json["genre_name"]
             db.session.commit()
-            return {"message": "data updated"}, 201
+            return {"Message": "Data updated"}, 201
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -106,5 +109,5 @@ class DeleteGenre(Resource):
         if genre:
             db.session.delete(genre)
             db.session.commit()
-            return {"message": "data deleted successfully"}, 201
+            return {"Message": "Data deleted successfully"}, 201
         return {"Error": "Genre not found"}, 404
