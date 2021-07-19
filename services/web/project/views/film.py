@@ -67,7 +67,8 @@ class GetFilms(Resource):
                 }
                 for film in films
             ]
-            return result, 200
+            for i in result:
+                return i, 200
         return {"Error": "Film was not found"}, 404
 
 
@@ -87,6 +88,7 @@ class GetOneGenre(Resource):
         sorting_data = args["sort_data"]
         from_film = args["from"]
         to_film = args["to"]
+        sort_by = args["sort_by"]
         genre_film = args["genre_film"]
         genre_agg = func.array_agg(GenreModel.genre_name, type_=ARRAY(String)).label(
             "genres"
@@ -108,8 +110,12 @@ class GetOneGenre(Resource):
         if director_film is not None:
             films = films.filter(Director.director_name == director_film)
         if sorting_data == "Rating":
+            if sort_by == "Ascending":
+                films = films.order_by(FilmModel.rating.asc())
             films = films.order_by(FilmModel.rating.desc())
         elif sorting_data == "Date Release":
+            if sort_by == "Ascending":
+                films = films.order_by(FilmModel.year_release.asc())
             films = films.order_by(FilmModel.year_release.desc())
         if from_film and to_film:
             films = films.filter(FilmModel.year_release.between(from_film, to_film))
@@ -176,36 +182,11 @@ class PostGenre(Resource):
                 db.session.add(film)
                 db.session.commit()
                 genres = request.json["genres"]
-                self.genre_post(genres)
-                return {"message": "Film added to database"}, 201
-            return {"error": "Access to the requested resource is forbidden"}, 403
+                GenreModel.genre_post(genres)
+                return {"Message": "Film added to database"}, 201
+            return {"Error": "Access to the requested resource is forbidden"}, 403
         except ValidationError as err:
             return {"Error ": str(err)}, 400
-
-    @staticmethod
-    def genre_post(list_genre: list):
-        """Adding genres to the database"""
-
-        count_films = FilmModel.query.order_by(FilmModel.film_id.desc()).first()
-        for genre in list_genre:
-            sm_genre = GenreModel.genre_in(genre)
-            if sm_genre:
-                filmgenre = FilmGenre(
-                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
-                )
-                db.session.add(filmgenre)
-                db.session.commit()
-            else:
-                genre_add = GenreModel(genre_name=genre)
-                db.session.add(genre_add)
-                db.session.commit()
-
-                sm_genre = GenreModel.genre_in(genre)
-                filmgenre = FilmGenre(
-                    genre_id=sm_genre.genre_id, film_id=int(count_films.film_id)
-                )
-                db.session.add(filmgenre)
-                db.session.commit()
 
 
 @api.route("/put/<int:film_id>")
@@ -219,17 +200,32 @@ class PutGenre(Resource):
         """Update data about film"""
         try:
             film = FilmModel.query.get(film_id)
-            if film.user_id == current_user.user_id or current_user.is_admin is True:
-                film.title = request.json["title"]
-                film.year_release = request.json["year_release"]
-                film.director_id = request.json["director_id"]
-                film.description = request.json["description"]
-                film.rating = request.json["rating"]
-                film.poster = request.json["poster"]
-                film.user_id = current_user.user_id
-                db.session.commit()
-                return {"message": "Data updated"}, 201
-            return {"error": "Access to the requested resource is forbidden"}, 403
+            if current_user.user_id:
+                director_in = request.json["director_name"]
+                if director_in == "":
+                    director_in = "unknown"
+                sm_director = Director.director_in(director_in)
+                if sm_director:
+                    director_sp_id = sm_director.director_id
+                else:
+                    dir_name = Director(director_name=director_in)
+                    db.session.add(dir_name)
+                    db.session.commit()
+                    sm_director = Director.director_in(director_in)
+                    director_sp_id = sm_director.director_id
+                if film.user_id == current_user.user_id or current_user.is_admin is True:
+                    film.title = request.json["title"]
+                    film.year_release = request.json["year_release"]
+                    film.director_id = director_sp_id
+                    film.description = request.json["description"]
+                    film.rating = request.json["rating"]
+                    film.poster = request.json["poster"]
+                    film.user_id = current_user.user_id
+                    db.session.commit()
+                    genres = request.json["genres"]
+                    GenreModel.genre_post(genres)
+                    return {"Message": "Data updated"}, 201
+                return {"Error": "Access to the requested resource is forbidden"}, 403
         except ValidationError as err:
             return {"Error ": str(err)}, 400
 
@@ -246,5 +242,5 @@ class DeleteGenre(Resource):
         if film.user_id == current_user.user_id or current_user.is_admin is True:
             db.session.delete(film)
             db.session.commit()
-            return {"message": "Data deleted successfully"}, 201
-        return {"error": "Access to the requested resource is forbidden"}, 403
+            return {"Message": "Data deleted successfully"}, 201
+        return {"Error": "Access to the requested resource is forbidden"}, 403

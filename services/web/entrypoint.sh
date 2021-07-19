@@ -11,8 +11,8 @@ then
     echo "PostgreSQL started"
 fi
 
-python manage.py create_db
-python manage.py insert_db
-python manage.py create_admin
-python manage.py create_unknown
+python services/web/manage.py create_db
+python services/web/manage.py insert_db
+python services/web/manage.py create_admin
+python services/web/manage.py create_unknown
 exec "$@"
