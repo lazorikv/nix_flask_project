@@ -16,11 +16,16 @@ from services.web.project.views.logining import api as auth_namespace
 
 #  init app
 
-app = Flask(__name__)
+def create_app():
+    """Create application"""
+    application = Flask(__name__)
+    application.secret_key = "MY_SECRET_KEY"
+    application.config.from_object("services.web.project.config.Config")
+    return application
 
-app.secret_key = "MY_SECRET_KEY"
-app.config.from_object("services.web.project.config.Config")
 
+
+app = create_app()
 
 app = create_app()
 app.secret_key = "MY_SECRET_KEY"
@@ -28,7 +33,7 @@ app.secret_key = "MY_SECRET_KEY"
 # init logging
 
 logging.basicConfig(filename='error.log', level=logging.DEBUG)
-# logging.config.dictConfig(yaml.load(open('logging.conf')))
+logging.config.dictConfig(yaml.load(open('services.logging.conf')))
 logfile = logging.getLogger('file')
 logconsole = logging.getLogger('console')
 logfile.debug("Debug FILE")
