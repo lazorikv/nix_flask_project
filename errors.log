@@ -132,3 +132,8 @@
 2021-07-19 14:59:59,678 - werkzeug - WARNING -  * Debugger is active!
 2021-07-19 14:59:59,679 - werkzeug - INFO -  * Debugger PIN: 165-289-899
 2021-07-19 14:59:59,715 - file - DEBUG - Debug FILE
+2021-07-19 15:12:06,262 - file - DEBUG - Debug FILE
+2021-07-19 15:12:06,464 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-19 15:12:06,997 - werkzeug - WARNING -  * Debugger is active!
+2021-07-19 15:12:06,998 - werkzeug - INFO -  * Debugger PIN: 165-289-899
+2021-07-19 15:12:07,018 - file - DEBUG - Debug FILE
