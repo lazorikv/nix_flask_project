@@ -24,6 +24,8 @@ faker = "*"
 sqlalchemy = "*"
 pyyaml = "==5.4.1"
 flask-cors = "*"
+pytest = "*"
+requests-mock = "*"
 
 [dev-packages]
 

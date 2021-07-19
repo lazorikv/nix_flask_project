@@ -1,0 +1,12 @@
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 694-874-772
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2021 20:42:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2021 20:42:39] "GET /api/v1/swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2021 20:42:39] "GET /swaggerui/favicon-32x32.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2021 20:44:43] "GET /api/v1/films/get/1 HTTP/1.1" 500 -
