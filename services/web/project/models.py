@@ -12,7 +12,7 @@ class FilmModel(db.Model):
     __tablename__ = "film"
 
     film_id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(50), nullable=False)
+    title = db.Column(db.String(50), index=True, nullable=False)
     year_release = db.Column(db.Date, nullable=False)
     director_id = db.Column(
         db.Integer,
@@ -47,7 +47,7 @@ class UserModel(UserMixin, db.Model):
     __tablename__ = "users"
 
     user_id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(20), nullable=False)
+    username = db.Column(db.String(20), index=True, nullable=False)
     password = db.Column(db.String(), nullable=False)
     is_admin = db.Column(db.Boolean, nullable=False)
     films = db.relationship("FilmModel", backref="film")
@@ -116,7 +116,7 @@ class Director(db.Model):
     __tablename__ = "director"
 
     director_id = db.Column(db.Integer, primary_key=True, )
-    director_name = db.Column(db.String(100), nullable=False)
+    director_name = db.Column(db.String(100), index=True, nullable=False)
     directed_film = db.relationship("FilmModel", backref="directed_film")
 
     def __init__(self, director_name):
@@ -127,7 +127,7 @@ class Director(db.Model):
 
     @classmethod
     def director_in(cls, director_name: str):
-        """Returns the genre query"""
+        """Returns the director query"""
         return Director.query.filter(Director.director_name == director_name).first()
 
 

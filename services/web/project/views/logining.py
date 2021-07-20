@@ -36,7 +36,10 @@ class SignUp(Resource):
     @staticmethod
     @api.expect(sign_up)
     def post() -> tuple:
-        """Sign up users in system"""
+        """
+        Sign up users in system
+        :return json message
+        """
 
         try:
             if request.is_json:
@@ -72,7 +75,10 @@ class Login(Resource):
     @staticmethod
     @api.expect(login_in)
     def post() -> tuple:
-        """Login user in system"""
+        """
+        Login user in system
+        :return json message
+        """
 
         if request.method == "POST":
             if request.is_json:
@@ -99,10 +105,13 @@ class Logout(Resource):
 
     @staticmethod
     @login_required
-    def get():
-        """Logout user from system"""
+    def get() -> tuple:
+        """
+        Logout user from system
+        :return json message
+        """
         try:
             logout_user()
-            return {"Message": "User is logout"}
+            return {"Message": "User is logout"}, 202
         except AttributeError:
             return {"Message": "User is not logged in"}, 404

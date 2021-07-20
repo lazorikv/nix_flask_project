@@ -23,8 +23,10 @@ class GetDirector(Resource):
 
     @staticmethod
     def get() -> tuple:
-        """Get data about all directors
+        """
+        Get data about all directors
         Format: json
+        :return json with data about director
         """
 
         directors = Director.query.all()
@@ -47,8 +49,10 @@ class GetOneDirector(Resource):
 
     @staticmethod
     def get(director_id: int) -> tuple:
-        """Get data about one director
+        """
+        Get data about one director
         Format: json
+        :return json with data about director by director_id
         """
 
         director = db.session.query(Director).filter_by(director_id=director_id).first()
@@ -67,7 +71,10 @@ class PostDirector(Resource):
     @staticmethod
     @api.expect(director_model)
     def post() -> tuple:
-        """Post data about director to db"""
+        """
+        Post data about director to db
+        :return json message
+        """
 
         try:
             data = request.json["director_name"]
@@ -88,7 +95,10 @@ class PutDirector(Resource):
     @staticmethod
     @api.expect(director_model)
     def put(director_id: int) -> tuple:
-        """Update data about director"""
+        """
+        Update data about director
+        :return json message
+        """
 
         try:
             director = Director.query.get(director_id)
@@ -105,7 +115,10 @@ class DeleteDirector(Resource):
 
     @staticmethod
     def delete(director_id: int) -> tuple:
-        """Removes a director by id"""
+        """
+        Removes a director by id
+        :return json message
+        """
 
         director = Director.query.get(director_id)
         if director:

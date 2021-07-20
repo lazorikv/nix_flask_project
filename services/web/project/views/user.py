@@ -6,7 +6,7 @@ from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 
 
-api = Namespace("users", description="User CRUD methods")
+api = Namespace("users", description="User of film library")
 
 user_model = api.model(
     "User",
@@ -24,8 +24,10 @@ class GetUser(Resource):
 
     @staticmethod
     def get() -> tuple:
-        """Get data about all users
+        """
+        Get data about all users
         Format: json
+        :return json with data about users
         """
 
         users = models.UserModel.query.all()
@@ -49,8 +51,10 @@ class GetOneUser(Resource):
 
     @staticmethod
     def get(user_id: int) -> tuple:
-        """Get data about one user
+        """
+        Get data about one user
         Format: json
+        :return json with data about user by user_id
         """
 
         user = (
@@ -73,7 +77,10 @@ class PostUser(Resource):
     @staticmethod
     @api.expect(user_model)
     def post() -> tuple:
-        """Post data about user to server"""
+        """
+        Post data about user to server
+        :return json message
+        """
 
         try:
             user = models.UserModel(
@@ -94,7 +101,10 @@ class PutUser(Resource):
     @staticmethod
     @api.expect(user_model)
     def put(user_id: int) -> tuple:
-        """Update data about user"""
+        """
+        Update data about user
+        :return json message
+        """
 
         try:
             user = models.UserModel.query.get(user_id)
@@ -113,7 +123,10 @@ class DeleteUser(Resource):
 
     @staticmethod
     def delete(user_id: int) -> tuple:
-        """Removes a user by his id"""
+        """
+        Removes a user by his id
+        :return json message
+        """
 
         user = models.UserModel.query.filter(models.UserModel.user_id == user_id).first()
         if user:
