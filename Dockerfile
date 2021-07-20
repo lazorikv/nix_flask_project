@@ -17,7 +17,8 @@ COPY services/web/requirements.txt /usr/src/app/requirements.txt
 RUN pip install -r requirements.txt
 
 # copy project
-COPY . /usr/src/app/
+COPY ../.. /usr/src/app/
+CMD ["gunicorn", "-w", "3", "-b", ":5000", "-t", "360", "--reload", "service.web.manage:app"]
 
 # run entrypoint.sh
 ENTRYPOINT ["/usr/src/app/services/web/entrypoint.sh"]
