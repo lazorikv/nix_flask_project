@@ -137,3 +137,270 @@
 2021-07-19 15:12:06,997 - werkzeug - WARNING -  * Debugger is active!
 2021-07-19 15:12:06,998 - werkzeug - INFO -  * Debugger PIN: 165-289-899
 2021-07-19 15:12:07,018 - file - DEBUG - Debug FILE
+2021-07-20 16:38:22,915 - file - DEBUG - Debug FILE
+2021-07-20 16:38:23,065 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:38:25,920 - file - DEBUG - Debug FILE
+2021-07-20 16:38:26,079 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:38:26,591 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2021-07-20 16:38:26,596 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2021-07-20 16:38:26,598 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2021-07-20 16:38:26,600 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2021-07-20 16:38:26,601 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2021-07-20 16:38:26,604 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2021-07-20 16:38:26,605 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2021-07-20 16:38:26,606 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2021-07-20 16:38:26,610 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2021-07-20 16:38:26,611 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2021-07-20 16:38:26,612 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2021-07-20 16:38:26,616 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2021-07-20 16:38:26,617 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2021-07-20 16:38:26,618 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2021-07-20 16:38:26,619 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2021-07-20 16:38:26,621 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2021-07-20 16:38:26,622 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2021-07-20 16:38:26,625 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2021-07-20 16:38:26,626 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:38:26,626 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2021-07-20 16:38:26,627 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2021-07-20 16:38:26,628 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2021-07-20 16:38:26,631 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2021-07-20 16:38:26,633 - faker.factory - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:38:26,633 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2021-07-20 16:38:26,636 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2021-07-20 16:38:26,637 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2021-07-20 16:38:26,639 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2021-07-20 16:38:26,641 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2021-07-20 16:38:26,642 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2021-07-20 16:38:26,643 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2021-07-20 16:38:26,648 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2021-07-20 16:38:26,653 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2021-07-20 16:38:26,658 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2021-07-20 16:38:26,659 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:38:26,660 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:38:26,661 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2021-07-20 16:38:26,665 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2021-07-20 16:38:26,666 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:38:31,804 - file - DEBUG - Debug FILE
+2021-07-20 16:38:31,958 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:38:34,672 - file - DEBUG - Debug FILE
+2021-07-20 16:38:34,833 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:38:37,729 - file - DEBUG - Debug FILE
+2021-07-20 16:38:37,894 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:38:38,409 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-20 16:39:14,970 - werkzeug - INFO - 172.18.0.4 - - [20/Jul/2021 16:39:14] "GET /api/v1/genres/get HTTP/1.0" 200 -
+2021-07-20 16:47:49,818 - file - DEBUG - Debug FILE
+2021-07-20 16:47:49,966 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:47:52,824 - file - DEBUG - Debug FILE
+2021-07-20 16:47:52,988 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:47:53,502 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2021-07-20 16:47:53,507 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2021-07-20 16:47:53,509 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2021-07-20 16:47:53,511 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2021-07-20 16:47:53,512 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2021-07-20 16:47:53,514 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2021-07-20 16:47:53,515 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2021-07-20 16:47:53,515 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2021-07-20 16:47:53,519 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2021-07-20 16:47:53,520 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2021-07-20 16:47:53,521 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2021-07-20 16:47:53,524 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2021-07-20 16:47:53,525 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2021-07-20 16:47:53,526 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2021-07-20 16:47:53,527 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2021-07-20 16:47:53,528 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2021-07-20 16:47:53,529 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2021-07-20 16:47:53,532 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2021-07-20 16:47:53,533 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:47:53,533 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2021-07-20 16:47:53,534 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2021-07-20 16:47:53,535 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2021-07-20 16:47:53,539 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2021-07-20 16:47:53,541 - faker.factory - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:47:53,541 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2021-07-20 16:47:53,543 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2021-07-20 16:47:53,544 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2021-07-20 16:47:53,546 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2021-07-20 16:47:53,548 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2021-07-20 16:47:53,548 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2021-07-20 16:47:53,550 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2021-07-20 16:47:53,556 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2021-07-20 16:47:53,560 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2021-07-20 16:47:53,565 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2021-07-20 16:47:53,566 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:47:53,567 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:47:53,568 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2021-07-20 16:47:53,573 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2021-07-20 16:47:53,574 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 16:47:58,490 - file - DEBUG - Debug FILE
+2021-07-20 16:47:58,657 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:48:01,357 - file - DEBUG - Debug FILE
+2021-07-20 16:48:01,509 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:48:04,178 - file - DEBUG - Debug FILE
+2021-07-20 16:48:04,342 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 16:48:04,866 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-20 21:53:22,959 - file - DEBUG - Debug FILE
+2021-07-20 21:53:27,775 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 21:53:33,189 - file - DEBUG - Debug FILE
+2021-07-20 21:53:33,387 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 21:53:33,923 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2021-07-20 21:53:33,927 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2021-07-20 21:53:34,009 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2021-07-20 21:53:34,011 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2021-07-20 21:53:34,037 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2021-07-20 21:53:34,039 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2021-07-20 21:53:34,063 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2021-07-20 21:53:34,063 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2021-07-20 21:53:34,081 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2021-07-20 21:53:34,082 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2021-07-20 21:53:34,084 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2021-07-20 21:53:34,086 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2021-07-20 21:53:34,088 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2021-07-20 21:53:34,089 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2021-07-20 21:53:34,113 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2021-07-20 21:53:34,114 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2021-07-20 21:53:34,131 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2021-07-20 21:53:34,134 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2021-07-20 21:53:34,163 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 21:53:34,164 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2021-07-20 21:53:34,164 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2021-07-20 21:53:34,192 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2021-07-20 21:53:34,195 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2021-07-20 21:53:34,197 - faker.factory - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 21:53:34,198 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2021-07-20 21:53:34,200 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2021-07-20 21:53:34,232 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2021-07-20 21:53:34,234 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2021-07-20 21:53:34,253 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2021-07-20 21:53:34,254 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2021-07-20 21:53:34,278 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2021-07-20 21:53:34,283 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2021-07-20 21:53:34,318 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2021-07-20 21:53:34,323 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2021-07-20 21:53:34,340 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 21:53:34,340 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 21:53:34,340 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2021-07-20 21:53:34,344 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2021-07-20 21:53:34,364 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 21:53:39,691 - file - DEBUG - Debug FILE
+2021-07-20 21:53:39,845 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 21:53:42,548 - file - DEBUG - Debug FILE
+2021-07-20 21:53:42,710 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 21:53:45,322 - file - DEBUG - Debug FILE
+2021-07-20 21:53:45,471 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 21:53:46,039 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-20 21:53:50,345 - werkzeug - INFO - 172.18.0.4 - - [20/Jul/2021 21:53:50] "GET / HTTP/1.0" 200 -
+2021-07-20 21:53:51,230 - werkzeug - INFO - 172.18.0.4 - - [20/Jul/2021 21:53:51] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+2021-07-20 21:53:51,447 - werkzeug - INFO - 172.18.0.4 - - [20/Jul/2021 21:53:51] "GET /swaggerui/favicon-32x32.png HTTP/1.0" 200 -
+2021-07-20 22:07:00,638 - file - DEBUG - Debug FILE
+2021-07-20 22:07:00,829 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:04,029 - file - DEBUG - Debug FILE
+2021-07-20 22:07:04,193 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:04,767 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2021-07-20 22:07:04,772 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2021-07-20 22:07:04,774 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2021-07-20 22:07:04,776 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2021-07-20 22:07:04,777 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2021-07-20 22:07:04,779 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2021-07-20 22:07:04,780 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2021-07-20 22:07:04,781 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2021-07-20 22:07:04,784 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2021-07-20 22:07:04,786 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2021-07-20 22:07:04,787 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2021-07-20 22:07:04,789 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2021-07-20 22:07:04,790 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2021-07-20 22:07:04,791 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2021-07-20 22:07:04,792 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2021-07-20 22:07:04,793 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2021-07-20 22:07:04,794 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2021-07-20 22:07:04,796 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2021-07-20 22:07:04,797 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 22:07:04,798 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2021-07-20 22:07:04,799 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2021-07-20 22:07:04,799 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2021-07-20 22:07:04,803 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2021-07-20 22:07:04,804 - faker.factory - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 22:07:04,805 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2021-07-20 22:07:04,807 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2021-07-20 22:07:04,808 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2021-07-20 22:07:04,809 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2021-07-20 22:07:04,811 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2021-07-20 22:07:04,811 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2021-07-20 22:07:04,812 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2021-07-20 22:07:04,817 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2021-07-20 22:07:04,821 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2021-07-20 22:07:04,826 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2021-07-20 22:07:04,827 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 22:07:04,827 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 22:07:04,827 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2021-07-20 22:07:04,831 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2021-07-20 22:07:04,832 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-20 22:07:11,136 - file - DEBUG - Debug FILE
+2021-07-20 22:07:11,299 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:14,273 - file - DEBUG - Debug FILE
+2021-07-20 22:07:14,435 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:17,505 - file - DEBUG - Debug FILE
+2021-07-20 22:07:17,654 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:18,351 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-20 22:07:18,365 - werkzeug - INFO -  * Restarting with stat
+2021-07-20 22:07:20,551 - file - DEBUG - Debug FILE
+2021-07-20 22:07:20,726 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-20 22:07:21,316 - werkzeug - WARNING -  * Debugger is active!
+2021-07-20 22:07:21,406 - werkzeug - INFO -  * Debugger PIN: 339-340-173
+2021-07-21 07:02:48,296 - file - DEBUG - Debug FILE
+2021-07-21 07:02:48,458 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-21 07:02:51,588 - file - DEBUG - Debug FILE
+2021-07-21 07:02:51,754 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-21 07:02:52,325 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2021-07-21 07:02:52,329 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2021-07-21 07:02:52,331 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2021-07-21 07:02:52,333 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2021-07-21 07:02:52,334 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2021-07-21 07:02:52,336 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2021-07-21 07:02:52,337 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2021-07-21 07:02:52,338 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2021-07-21 07:02:52,341 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2021-07-21 07:02:52,342 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2021-07-21 07:02:52,343 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2021-07-21 07:02:52,345 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2021-07-21 07:02:52,346 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2021-07-21 07:02:52,347 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2021-07-21 07:02:52,348 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2021-07-21 07:02:52,349 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2021-07-21 07:02:52,350 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2021-07-21 07:02:52,352 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2021-07-21 07:02:52,353 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-21 07:02:52,354 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2021-07-21 07:02:52,355 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2021-07-21 07:02:52,355 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2021-07-21 07:02:52,358 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2021-07-21 07:02:52,359 - faker.factory - DEBUG - Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-21 07:02:52,360 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2021-07-21 07:02:52,362 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2021-07-21 07:02:52,363 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2021-07-21 07:02:52,364 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2021-07-21 07:02:52,365 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2021-07-21 07:02:52,366 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2021-07-21 07:02:52,367 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2021-07-21 07:02:52,371 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2021-07-21 07:02:52,375 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2021-07-21 07:02:52,379 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2021-07-21 07:02:52,380 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-21 07:02:52,381 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-21 07:02:52,382 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2021-07-21 07:02:52,385 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2021-07-21 07:02:52,386 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2021-07-21 07:02:57,807 - file - DEBUG - Debug FILE
+2021-07-21 07:02:57,954 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-21 07:03:00,673 - file - DEBUG - Debug FILE
+2021-07-21 07:03:00,828 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-21 07:03:03,521 - file - DEBUG - Debug FILE
+2021-07-21 07:03:03,696 - faker.factory - DEBUG - Not in REPL -> leaving logger event level as is.
+2021-07-21 07:03:04,309 - werkzeug - INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-07-21 07:03:07,769 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:07] "GET / HTTP/1.0" 200 -
+2021-07-21 07:03:07,942 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:07] "GET /swaggerui/droid-sans.css HTTP/1.0" 304 -
+2021-07-21 07:03:07,951 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:07] "GET /swaggerui/swagger-ui.css HTTP/1.0" 304 -
+2021-07-21 07:03:07,964 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:07] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.0" 304 -
+2021-07-21 07:03:07,965 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:07] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.0" 304 -
+2021-07-21 07:03:08,461 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:08] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+2021-07-21 07:03:08,464 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:08] "GET /swaggerui/favicon-32x32.png HTTP/1.0" 200 -
+2021-07-21 07:03:16,730 - werkzeug - INFO - 172.20.0.4 - - [21/Jul/2021 07:03:16] "GET /api/v1/films/get/?start=1&limit=10 HTTP/1.0" 200 -

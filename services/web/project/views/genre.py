@@ -1,9 +1,9 @@
 """Genre methods CRUD"""
 
 from flask import request
-from services.web.project.models import db, GenreModel
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
+from services.web.project.models import db, GenreModel
 
 
 api = Namespace("genres", description="Film genres")
@@ -23,8 +23,11 @@ class GetGenre(Resource):
 
     @staticmethod
     def get() -> tuple:
-        """Get data about all genres
+        """
+        Get data about all genres
         Format: json
+        :returns genre_list: list with get genres from db
+
         """
 
         genres = GenreModel.query.all()
@@ -46,8 +49,10 @@ class GetOneGenre(Resource):
 
     @staticmethod
     def get(genre_id: int) -> tuple:
-        """Get data about one genre
+        """
+        Get data about one genre
         Format: json
+        :return json with data about genre by genre_id
         """
 
         genre = db.session.query(GenreModel).filter_by(genre_id=genre_id).first()
@@ -67,7 +72,10 @@ class PostGenre(Resource):
     @staticmethod
     @api.expect(genre_model)
     def post() -> tuple:
-        """Post data about genre to db"""
+        """
+        Post data about genre to db
+        :return json message
+        """
 
         try:
             data = request.json["genre_name"]
@@ -83,12 +91,15 @@ class PostGenre(Resource):
 
 @api.route("/put/<int:genre_id>")
 class PutGenre(Resource):
-    """Method PUT"""
+    """Method PUT """
 
     @staticmethod
     @api.expect(genre_model)
     def put(genre_id: int) -> tuple:
-        """Update data about genre"""
+        """
+        Update data about genre
+        :return json message
+        """
         try:
             genre = GenreModel.query.get(genre_id)
             genre.genre_name = request.json["genre_name"]
@@ -104,7 +115,10 @@ class DeleteGenre(Resource):
 
     @staticmethod
     def delete(genre_id: int) -> tuple:
-        """Removes a genre by id"""
+        """
+        Removes a genre by id
+        :return json message
+        """
         genre = GenreModel.query.get(genre_id)
         if genre:
             db.session.delete(genre)

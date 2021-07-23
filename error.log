@@ -206,3 +206,146 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 269-169-698
 DEBUG:file:Debug FILE
 DEBUG:console:Debug CONSOLE
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG:faker.factory:Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG:faker.factory:Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG:faker.factory:Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG:faker.factory:Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG:faker.factory:Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG:faker.factory:Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG:faker.factory:Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG:faker.factory:Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG:faker.factory:Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG:faker.factory:Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG:faker.factory:Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.isbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG:faker.factory:Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG:faker.factory:Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG:faker.factory:Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG:faker.factory:Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG:faker.factory:Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:faker.factory:Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG:faker.factory:Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG:faker.factory:Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+DEBUG:file:Debug FILE
+DEBUG:console:Debug CONSOLE
+DEBUG:faker.factory:Not in REPL -> leaving logger event level as is.
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:40] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:41] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:41] "GET /swaggerui/droid-sans.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:41] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:41] "GET /swaggerui/swagger-ui.css HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:42] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 14:12:42] "GET /swaggerui/favicon-32x32.png HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 15:11:06] "GET /api/v1/films/get/?start=1&limit=10&sort_data=Date%20Release&sort_by=Ascending HTTP/1.0" 200 -
+ERROR:services.web.project.app:Exception on /api/v1/films/post [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.CheckViolation: new row for relation "film" violates check constraint "film_rating_check"
+DETAIL:  Failing row contains (152, 5et, 2020-09-01, 53, wqercwe, 11, wqercwqecr, 102).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.9/site-packages/flask_restplus/api.py", line 325, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/flask/views.py", line 89, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/flask_restplus/resource.py", line 44, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/usr/src/app/services/web/project/views/film.py", line 183, in post
+    db.session.commit()
+  File "<string>", line 2, in commit
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1428, in commit
+    self._transaction.commit(_to_root=self.future)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 829, in commit
+    self._prepare_impl()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 808, in _prepare_impl
+    self.session.flush()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3298, in flush
+    self._flush(objects)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3438, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 3398, in _flush
+    flush_context.execute()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1582, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1451, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1813, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1994, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1770, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (psycopg2.errors.CheckViolation) new row for relation "film" violates check constraint "film_rating_check"
+DETAIL:  Failing row contains (152, 5et, 2020-09-01, 53, wqercwe, 11, wqercwqecr, 102).
+
+[SQL: INSERT INTO film (title, year_release, director_id, description, rating, poster, user_id) VALUES (%(title)s, %(year_release)s, %(director_id)s, %(description)s, %(rating)s, %(poster)s, %(user_id)s) RETURNING film.film_id]
+[parameters: {'title': '5et', 'year_release': '2020-09-01', 'director_id': 53, 'description': 'wqercwe', 'rating': '11', 'poster': 'wqercwqecr', 'user_id': 102}]
+(Background on this error at: http://sqlalche.me/e/14/gkpj)
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 15:21:25] "POST /api/v1/films/post HTTP/1.0" 500 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 16:35:35] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 16:35:36] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 16:35:36] "GET /swaggerui/favicon-32x32.png HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 16:35:38] "GET /api/v1/swagger.json HTTP/1.0" 200 -
+INFO:werkzeug:172.18.0.4 - - [20/Jul/2021 16:35:38] "GET /favicon.ico HTTP/1.0" 404 -

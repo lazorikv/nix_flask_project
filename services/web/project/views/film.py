@@ -2,13 +2,13 @@
 
 from flask import request
 from flask_login import current_user, login_required
-from services.web.project.args import sorting
-from services.web.project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
-from services.web.project.paginate import get_paginated_list
 from flask_restplus import fields, Resource, Namespace
 from marshmallow import ValidationError
 from sqlalchemy import String, func
 from sqlalchemy.dialects.postgresql import ARRAY
+from services.web.project.args import sorting
+from services.web.project.models import FilmModel, GenreModel, Director, UserModel, db, FilmGenre
+from services.web.project.paginate import get_paginated_list
 
 
 api = Namespace("films", description="Films in library")
@@ -36,6 +36,7 @@ class GetFilms(Resource):
     def get(film_id: int) -> tuple:
         """Get data about one film
         Format: json
+        :return json with data about film by film_id
         """
 
         genre_agg = func.array_agg(GenreModel.genre_name, type_=ARRAY(String)).label(
@@ -81,7 +82,9 @@ class GetOneGenre(Resource):
     def get() -> tuple:
         """Get data about all films
         Format: json
+        :return json list of films
         """
+
         args = sorting.parse_args()
         start = args["start"]
         limit = args["limit"]
@@ -105,20 +108,26 @@ class GetOneGenre(Resource):
         director_film = args["Director"]
         search_film = args["search"]
 
+        # partial match search
         if search_film:
             films = films.filter(FilmModel.title.ilike(f"%{search_film}%"))
-        if director_film is not None:
+        # search by director name
+        if director_film:
             films = films.filter(Director.director_name == director_film)
+        # sorting by rating
         if sorting_data == "Rating":
             if sort_by == "Ascending":
                 films = films.order_by(FilmModel.rating.asc())
             films = films.order_by(FilmModel.rating.desc())
+        # sorting by data release
         elif sorting_data == "Date Release":
             if sort_by == "Ascending":
                 films = films.order_by(FilmModel.year_release.asc())
             films = films.order_by(FilmModel.year_release.desc())
+        # search by date range
         if from_film and to_film:
             films = films.filter(FilmModel.year_release.between(from_film, to_film))
+        # search by genre
         if genre_film:
             films = films.filter(GenreModel.genre_name == genre_film)
         if films:
@@ -154,7 +163,10 @@ class PostGenre(Resource):
     @api.expect(film_model)
     @login_required
     def post(self) -> tuple:
-        """Post data about film to db"""
+        """
+        Post data about film to db
+        :return json message
+        """
 
         try:
             if current_user.user_id:
@@ -237,10 +249,15 @@ class DeleteGenre(Resource):
     @staticmethod
     @login_required
     def delete(film_id: int) -> tuple:
-        """Removes a film by id"""
+        """
+        Removes a film by id
+        :return json message or error
+        """
         film = FilmModel.query.filter(FilmModel.film_id == film_id).first()
-        if film.user_id == current_user.user_id or current_user.is_admin is True:
-            db.session.delete(film)
-            db.session.commit()
-            return {"Message": "Data deleted successfully"}, 201
-        return {"Error": "Access to the requested resource is forbidden"}, 403
+        if film:
+            if film.user_id == current_user.user_id or current_user.is_admin is True:
+                db.session.delete(film)
+                db.session.commit()
+                return {"Message": "Data deleted successfully"}, 201
+            return {"Error": "Access to the requested resource is forbidden"}, 403
+        return {"Error": "Films not found"}, 404
